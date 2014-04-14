@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{858BC3D5-8B2D-4B24-8BD9-BDC36A1DAFE4}</ProjectGuid>
+    <ProjectGuid>{8C8E0CD5-E756-4AA7-A153-BC4D4039F7A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Messaging-net_2_0</OutputPath>
@@ -115,32 +115,32 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration.Install\System.Configuration.Install-net_2_0.csproj">
-      <Project>{5CE6E3F2-E63D-4C2B-9CCE-6446021A1AF5}</Project>
-      <Name>System.Configuration.Install\System.Configuration.Install-net_2_0</Name>
+      <Project>{949476BE-A6ED-45A6-BEE9-AEE2B1AF1E94}</Project>
+      <Name>System.Configuration.Install-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Drawing\System.Drawing-net_2_0.csproj">
-      <Project>{CA7E5301-90D2-4C07-87B7-851AA216D4C9}</Project>
-      <Name>System.Drawing\System.Drawing-net_2_0</Name>
+      <Project>{AA43BEFC-33A6-4C4C-9C42-27E34EA95E8A}</Project>
+      <Name>System.Drawing-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_2_0.csproj">
-      <Project>{19413C30-6E39-4AAC-B9D1-FC88082E74C8}</Project>
-      <Name>Managed.Windows.Forms\System.Windows.Forms-net_2_0</Name>
+      <Project>{57D77C75-B43F-4D8D-A746-90726BC2C9E2}</Project>
+      <Name>System.Windows.Forms-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Messaging\Mono.Messaging-net_2_0.csproj">
-      <Project>{A516A3FA-33AA-46AB-9542-49952ED25A0F}</Project>
-      <Name>Mono.Messaging\Mono.Messaging-net_2_0</Name>
+      <Project>{9376B6DE-4DDC-4F9B-B6CA-E6EC704732D7}</Project>
+      <Name>Mono.Messaging-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

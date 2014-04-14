@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1D4BCF4D-31D1-4F92-A2B2-D9E41A640649}</ProjectGuid>
+    <ProjectGuid>{554A81EB-9095-4F7A-B8E2-F748741A3C75}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Microsoft.Build.Framework-net_4_0</OutputPath>
@@ -46,11 +46,14 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
+    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="Microsoft.Build.Framework\AnyEventHandler.cs" />
+    <Compile Include="Microsoft.Build.Framework\BuildEngineResult.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildErrorEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildErrorEventHandler.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildEventArgs.cs" />
+    <Compile Include="Microsoft.Build.Framework\BuildEventContext.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildFinishedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildFinishedEventHandler.cs" />
     <Compile Include="Microsoft.Build.Framework\BuildMessageEventArgs.cs" />
@@ -67,14 +70,21 @@
     <Compile Include="Microsoft.Build.Framework\ExternalProjectStartedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\IBuildEngine.cs" />
     <Compile Include="Microsoft.Build.Framework\IBuildEngine2.cs" />
+    <Compile Include="Microsoft.Build.Framework\IBuildEngine3.cs" />
+    <Compile Include="Microsoft.Build.Framework\IBuildEngine4.cs" />
     <Compile Include="Microsoft.Build.Framework\ICancelableTask.cs" />
+    <Compile Include="Microsoft.Build.Framework\IEventRedirector.cs" />
     <Compile Include="Microsoft.Build.Framework\IEventSource.cs" />
+    <Compile Include="Microsoft.Build.Framework\IForwardingLogger.cs" />
     <Compile Include="Microsoft.Build.Framework\ILogger.cs" />
     <Compile Include="Microsoft.Build.Framework\INodeLogger.cs" />
     <Compile Include="Microsoft.Build.Framework\ITask.cs" />
+    <Compile Include="Microsoft.Build.Framework\ITaskFactory.cs" />
+    <Compile Include="Microsoft.Build.Framework\ITaskFactory2.cs" />
     <Compile Include="Microsoft.Build.Framework\ITaskHost.cs" />
     <Compile Include="Microsoft.Build.Framework\ITaskItem.cs" />
     <Compile Include="Microsoft.Build.Framework\ITaskItem2.cs" />
+    <Compile Include="Microsoft.Build.Framework\LazyFormattedBuildEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\LoadInSeparateAppDomainAttribute.cs" />
     <Compile Include="Microsoft.Build.Framework\LoggerException.cs" />
     <Compile Include="Microsoft.Build.Framework\LoggerVerbosity.cs" />
@@ -84,6 +94,7 @@
     <Compile Include="Microsoft.Build.Framework\ProjectFinishedEventHandler.cs" />
     <Compile Include="Microsoft.Build.Framework\ProjectStartedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\ProjectStartedEventHandler.cs" />
+    <Compile Include="Microsoft.Build.Framework\RegisteredTaskObjectLifetime.cs" />
     <Compile Include="Microsoft.Build.Framework\RequiredAttribute.cs" />
     <Compile Include="Microsoft.Build.Framework\TargetFinishedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\TargetFinishedEventHandler.cs" />
@@ -92,6 +103,7 @@
     <Compile Include="Microsoft.Build.Framework\TaskCommandLineEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\TaskFinishedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\TaskFinishedEventHandler.cs" />
+    <Compile Include="Microsoft.Build.Framework\TaskPropertyInfo.cs" />
     <Compile Include="Microsoft.Build.Framework\TaskStartedEventArgs.cs" />
     <Compile Include="Microsoft.Build.Framework\TaskStartedEventHandler.cs" />  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -111,12 +123,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DE98E72C-2727-4737-AAFC-CC1228F4812C}</ProjectGuid>
+    <ProjectGuid>{15472E6F-753B-4F52-B807-E7BEBAFF9F3F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Drawing-net_4_0</OutputPath>
@@ -180,7 +180,6 @@
     <Compile Include="System.Drawing\BufferedGraphics.cs" />
     <Compile Include="System.Drawing\BufferedGraphicsContext.cs" />
     <Compile Include="System.Drawing\BufferedGraphicsManager.cs" />
-    <Compile Include="System.Drawing\CharacterRange.cs" />
     <Compile Include="System.Drawing\Color.cs" />
     <Compile Include="System.Drawing\ColorConverter.cs" />
     <Compile Include="System.Drawing\ColorTranslator.cs" />
@@ -197,6 +196,7 @@
     <Compile Include="System.Drawing\gdipStructs.cs" />
     <Compile Include="System.Drawing\Graphics.cs" />
     <Compile Include="System.Drawing\GraphicsUnit.cs" />
+    <Compile Include="System.Drawing\CharacterRange.cs" />
     <Compile Include="System.Drawing\Icon.cs" />
     <Compile Include="System.Drawing\IconConverter.cs" />
     <Compile Include="System.Drawing\IDeviceContext.cs" />
@@ -253,12 +253,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

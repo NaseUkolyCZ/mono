@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9A7E3AA8-1EB4-4A43-A806-636E6B220A76}</ProjectGuid>
+    <ProjectGuid>{E74147C1-972E-41C1-90CE-814F016E3122}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Numerics-net_4_5</OutputPath>
@@ -45,7 +45,6 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
-    <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="System.Numerics\BigInteger.cs" />
     <Compile Include="System.Numerics\Complex.cs" />  </ItemGroup>
@@ -66,12 +65,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

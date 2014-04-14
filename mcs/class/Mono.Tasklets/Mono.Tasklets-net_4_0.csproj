@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C7FF3EC5-5F00-4464-BD63-437CD5483DDD}</ProjectGuid>
+    <ProjectGuid>{475F7B4C-BD67-428F-936E-3FEA7FB530A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Mono.Tasklets-net_4_0</OutputPath>
@@ -65,8 +65,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

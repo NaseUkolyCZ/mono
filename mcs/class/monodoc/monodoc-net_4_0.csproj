@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2A219013-33EF-412C-ACA4-180E3B423624}</ProjectGuid>
+    <ProjectGuid>{66DC195D-45DB-4049-92F0-4D032ECBC08C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>618,612,672,809,1699,169,164,162,168,219,618,612</NoWarn>
     <OutputPath>bin\Debug\monodoc-net_4_0</OutputPath>
@@ -113,8 +113,6 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\ByteBlockPool.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\ByteSliceReader.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\ByteSliceWriter.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CharBlockPool.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CheckIndex.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CompoundFileReader.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CompoundFileWriter.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\ConcurrentMergeScheduler.cs" />
@@ -158,6 +156,8 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\FreqProxTermsWriter.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\FreqProxTermsWriterPerField.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\FreqProxTermsWriterPerThread.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CharBlockPool.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\CheckIndex.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\IndexCommit.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\IndexDeletionPolicy.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Index\IndexFileDeleter.cs" />
@@ -242,8 +242,8 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Messages\Message.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Messages\MessageImpl.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Messages\NLS.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\CharStream.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\FastCharStream.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\CharStream.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\MultiFieldQueryParser.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\ParseException.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\QueryParser\QueryParser.cs" />
@@ -373,12 +373,12 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\AlreadyClosedException.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\BufferedIndexInput.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\BufferedIndexOutput.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\CheckSumIndexInput.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\CheckSumIndexOutput.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\Directory.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\FileSwitchDirectory.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\FSDirectory.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\FSLockFactory.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\CheckSumIndexInput.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\CheckSumIndexOutput.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\IndexInput.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\IndexOutput.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Store\Lock.cs" />
@@ -404,7 +404,6 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\AttributeImplItem.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\BitSetSupport.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\BuildType.cs" />
-    <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\Character.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\CloseableThreadLocalProfiler.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\CollectionsHelper.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\Compare.cs" />
@@ -423,6 +422,7 @@
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\FileSupport.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\GeneralKeyedCollection.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\HashMap.cs" />
+    <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\Character.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\IChecksum.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\Inflater.cs" />
     <Compile Include="..\..\..\external\Lucene.Net\src\core\Support\IThreadRunnable.cs" />
@@ -534,32 +534,32 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\ICSharpCode.SharpZipLib\ICSharpCode.SharpZipLib-net_4_0.csproj">
-      <Project>{2DE2CFB0-3166-41D9-B0B5-EFBE309DD7B7}</Project>
-      <Name>ICSharpCode.SharpZipLib\ICSharpCode.SharpZipLib-net_4_0</Name>
+      <Project>{069FBA0A-30FD-4C37-A956-78BBB1C0BDB5}</Project>
+      <Name>ICSharpCode.SharpZipLib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq-net_4_0.csproj">
-      <Project>{1BD010C0-0588-4ACB-A9E7-483D138D29E9}</Project>
-      <Name>System.Xml.Linq\System.Xml.Linq-net_4_0</Name>
+      <Project>{74E0E0EB-375A-4ADF-8440-93DAF6333EEE}</Project>
+      <Name>System.Xml.Linq-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_0.csproj">
-      <Project>{CA49630B-FD24-411F-9651-B15CA72CE5B8}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_0</Name>
+      <Project>{939C5C8D-56F1-4AA8-9C44-F59431077782}</Project>
+      <Name>System.Configuration-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

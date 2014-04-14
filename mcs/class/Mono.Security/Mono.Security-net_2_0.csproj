@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6785B2B5-3B06-48F3-9E6C-99B23B9AAC4F}</ProjectGuid>
+    <ProjectGuid>{0992B8B3-5118-4BBF-A889-206AEED2E441}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,1030</NoWarn>
     <OutputPath>bin\Debug\Mono.Security-net_2_0</OutputPath>
@@ -84,6 +84,7 @@
     <Compile Include=".\Mono.Security.Protocol.Ntlm\MessageBase.cs" />
     <Compile Include=".\Mono.Security.Protocol.Ntlm\NtlmAuthLevel.cs" />
     <Compile Include=".\Mono.Security.Protocol.Ntlm\NtlmFlags.cs" />
+    <Compile Include=".\Mono.Security.Protocol.Ntlm\NtlmSettings.cs" />
     <Compile Include=".\Mono.Security.Protocol.Ntlm\Type1Message.cs" />
     <Compile Include=".\Mono.Security.Protocol.Ntlm\Type2Message.cs" />
     <Compile Include=".\Mono.Security.Protocol.Ntlm\Type3Message.cs" />
@@ -163,11 +164,11 @@
     <Compile Include=".\Mono.Security.X509\X509Certificate.cs" />
     <Compile Include=".\Mono.Security.X509\X509CertificateBuilder.cs" />
     <Compile Include=".\Mono.Security.X509\X509CertificateCollection.cs" />
-    <Compile Include=".\Mono.Security.X509\X509Chain.cs" />
-    <Compile Include=".\Mono.Security.X509\X509ChainStatusFlags.cs" />
     <Compile Include=".\Mono.Security.X509\X509CRL.cs" />
     <Compile Include=".\Mono.Security.X509\X509Extension.cs" />
     <Compile Include=".\Mono.Security.X509\X509Extensions.cs" />
+    <Compile Include=".\Mono.Security.X509\X509Chain.cs" />
+    <Compile Include=".\Mono.Security.X509\X509ChainStatusFlags.cs" />
     <Compile Include=".\Mono.Security.X509\X509Store.cs" />
     <Compile Include=".\Mono.Security.X509\X509StoreManager.cs" />
     <Compile Include=".\Mono.Security.X509\X509Stores.cs" />
@@ -196,12 +197,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0.csproj">
-      <Project>{245C754C-D6DE-4434-BA78-37A93E196236}</Project>
-      <Name>System\System-net_2_0</Name>
+      <Project>{D841DBC4-1C3C-4925-8DFD-B7A0095B67EF}</Project>
+      <Name>System-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

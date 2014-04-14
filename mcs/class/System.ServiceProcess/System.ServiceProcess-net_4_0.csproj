@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{700F95F4-78BE-41D5-9F7C-259592FBB267}</ProjectGuid>
+    <ProjectGuid>{3E39FC3B-A809-492C-8A9B-80B628F715BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,618</NoWarn>
     <OutputPath>bin\Debug\System.ServiceProcess-net_4_0</OutputPath>
@@ -89,20 +89,20 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration.Install\System.Configuration.Install-net_4_0.csproj">
-      <Project>{3C248397-71FD-4A63-B4A5-9F2A28C4D983}</Project>
-      <Name>System.Configuration.Install\System.Configuration.Install-net_4_0</Name>
+      <Project>{40B18C2F-C274-480B-A2EB-6F3ABA205AF1}</Project>
+      <Name>System.Configuration.Install-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_4_0.csproj">
-      <Project>{41B3B369-328C-45B8-9F14-224641427A35}</Project>
-      <Name>Managed.Windows.Forms\System.Windows.Forms-net_4_0</Name>
+      <Project>{22174F10-206B-4B11-98E3-578721F48E2F}</Project>
+      <Name>System.Windows.Forms-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

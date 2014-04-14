@@ -149,6 +149,22 @@ namespace System
 			"yy/MMMM/d",
 			"yy/d/MMM",
 			"MMM/yy/d",
+//
+			"yyyy/M/dTzzz",
+			"M/yyyy/dTzzz",
+			"yyyy'\u5E74'M'\u6708'd'\u65E5zzz",
+
+			"yyyy/MMMM/dzzz",
+			"yyyy/d/MMMzzz",
+			"MMMM/d/yyyyzzz",
+			"d/MMM/yyyyzzz",
+			"MMMM/yyyy/dzzz",
+			"d/yyyy/MMMzzz",
+
+			"yy/MMMM/dzzz",
+			"yy/d/MMMzzz",
+			"MMM/yy/dzzz",
+
 		};
 
 		private static readonly string[] ParseDayMonthYearFormats = new string [] {
@@ -199,6 +215,15 @@ namespace System
 			"yyyy'\u5E74'M'\u6708'd'\u65E5",
 			"yyyy'-'M'-'dT",
 			"yyyy'-'M'-'d",
+
+			"yyyy/M/dTzzz",
+			"yyyy/M/dzzz",
+			"M/yyyy/dTzzz",
+			"M/yyyy/dzzz",
+			"yyyy'\u5E74'M'\u6708'd'\u65E5zzz",
+			"yyyy'-'M'-'dTzzz",
+			"yyyy'-'M'-'dzzz",
+
 		};
 
 		// Patterns influenced by the MonthDayPattern in DateTimeFormatInfo.

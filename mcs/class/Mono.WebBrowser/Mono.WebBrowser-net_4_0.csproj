@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A0DF2D35-BA97-4CAB-90C6-1C4463186C3E}</ProjectGuid>
+    <ProjectGuid>{3C636D6D-E99B-46E6-966C-7C3012746255}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Mono.WebBrowser-net_4_0</OutputPath>
@@ -85,7 +85,6 @@
     <Compile Include="Mono.Mozilla\interfaces\nsIAccessNode.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIArray.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsICancelable.cs" />
-    <Compile Include="Mono.Mozilla\interfaces\nsIChannel.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIClassInfo.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDocCharset.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDocumentEncoder.cs" />
@@ -94,7 +93,6 @@
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMAttr.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMBarProp.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMCDATASection.cs" />
-    <Compile Include="Mono.Mozilla\interfaces\nsIDOMCharacterData.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMComment.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMCounter.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMCSSPrimitiveValue.cs" />
@@ -122,6 +120,7 @@
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMHTMLDocument.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMHTMLElement.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMHTMLStyleElement.cs" />
+    <Compile Include="Mono.Mozilla\interfaces\nsIDOMCharacterData.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMKeyEvent.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMMediaList.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIDOMMouseEvent.cs" />
@@ -144,6 +143,7 @@
     <Compile Include="Mono.Mozilla\interfaces\nsIErrorService.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIFile.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIHistoryEntry.cs" />
+    <Compile Include="Mono.Mozilla\interfaces\nsIChannel.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIInputStream.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIInterfaceRequestor.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIIOService.cs" />
@@ -169,9 +169,9 @@
     <Compile Include="Mono.Mozilla\interfaces\nsIURIContentListener.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWeakReference.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowser.cs" />
+    <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserFocus.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserChrome.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserChromeFocus.cs" />
-    <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserFocus.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserPersist.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebBrowserStream.cs" />
     <Compile Include="Mono.Mozilla\interfaces\nsIWebNavigation.cs" />
@@ -218,12 +218,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

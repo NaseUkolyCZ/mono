@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3A0F01E1-1196-4C1B-90DF-C3062FBEB5FA}</ProjectGuid>
+    <ProjectGuid>{BE73908E-0C1A-4B0C-AB7F-D58158EC5031}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Mono.Debugger.Soft-net_4_0</OutputPath>
@@ -75,6 +75,7 @@
     <Compile Include="Mono.Debugger.Soft\IInvokeAsyncResult.cs" />
     <Compile Include="Mono.Debugger.Soft\ILExceptionHandler.cs" />
     <Compile Include="Mono.Debugger.Soft\ILInstruction.cs" />
+    <Compile Include="Mono.Debugger.Soft\ILInterpreter.cs" />
     <Compile Include="Mono.Debugger.Soft\IMirror.cs" />
     <Compile Include="Mono.Debugger.Soft\InterfaceMappingMirror.cs" />
     <Compile Include="Mono.Debugger.Soft\InvalidStackFrameException.cs" />
@@ -136,20 +137,20 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Cecil\Mono.Cecil-net_4_0.csproj">
-      <Project>{1FA0877C-43C9-44C7-9682-0C3F826BEA3E}</Project>
-      <Name>Mono.Cecil\Mono.Cecil-net_4_0</Name>
+      <Project>{5E5DCD88-B5AE-4A13-A83E-A621D29785D5}</Project>
+      <Name>Mono.Cecil-net_4_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

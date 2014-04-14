@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{71477BE9-736B-4E63-87FB-D3BCBA4BB863}</ProjectGuid>
+    <ProjectGuid>{C06E0CB9-8182-4FAF-9CF5-2611D7A78D81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Json-net_4_0</OutputPath>
@@ -69,25 +69,26 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ServiceModel.Web\System.ServiceModel.Web-net_4_0.csproj">
-      <Project>{B9CFA1C3-B2EE-40CB-85EC-674A2D1CAC5F}</Project>
-      <Name>System.ServiceModel.Web\System.ServiceModel.Web-net_4_0</Name>
-    </ProjectReference>
+    <Reference Include="System.ServiceModel.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.ServiceModel.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

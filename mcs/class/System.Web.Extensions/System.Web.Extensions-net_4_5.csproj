@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{74E571CD-0506-4A52-B780-FDA9445675FB}</ProjectGuid>
+    <ProjectGuid>{AF75EB7C-0D96-4208-B036-01455BF192C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Web.Extensions-net_4_5</OutputPath>
@@ -205,57 +205,59 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
-      <Project>{D8260595-C32F-4AC3-9C01-2CD2528CFA1D}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Drawing\System.Drawing-net_4_5.csproj">
-      <Project>{945A4FD5-2184-44CC-9519-13AFC37ED81A}</Project>
-      <Name>System.Drawing\System.Drawing-net_4_5</Name>
+      <Project>{378451F2-2ABC-4E33-BFDA-D8A27A2361F0}</Project>
+      <Name>System.Drawing-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_4_5.csproj">
-      <Project>{663D8C81-B74E-4D44-8C59-2264C6942B30}</Project>
-      <Name>System.Data\System.Data-net_4_5</Name>
+      <Project>{4BC86D63-E324-4EED-933D-25D6B23CD7FF}</Project>
+      <Name>System.Data-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data.Linq\System.Data.Linq-net_4_5.csproj">
-      <Project>{D5F1C909-8875-4D37-8CC1-30851258C594}</Project>
-      <Name>System.Data.Linq\System.Data.Linq-net_4_5</Name>
+      <Project>{244452E1-9F12-4341-A3E5-9FCA41866BE5}</Project>
+      <Name>System.Data.Linq-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_4_5-2.csproj">
-      <Project>{93406A57-422B-4A7E-886A-B37F2E97DB78}</Project>
-      <Name>System.Web\System.Web-net_4_5-2</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\System.Web.Services\System.Web.Services-net_4_5.csproj">
-      <Project>{1CD96FCF-0288-4FA4-9451-47B0C2206186}</Project>
-      <Name>System.Web.Services\System.Web.Services-net_4_5</Name>
+      <Project>{9D35E008-B83D-4FCE-924A-1CFE174DAC90}</Project>
+      <Name>System.Web.Services-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
-      <Project>{CA2CD67B-1308-460D-BDBA-498F63DEAA31}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_5</Name>
+      <Project>{80C88BDD-6B93-4D91-9CD6-A9F62785E3E0}</Project>
+      <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.EnterpriseServices\System.EnterpriseServices-net_4_5.csproj">
-      <Project>{20B32D23-8DD0-4291-A98F-C52A3E99DFE8}</Project>
-      <Name>System.EnterpriseServices\System.EnterpriseServices-net_4_5</Name>
+      <Project>{117ACB4F-82D9-418F-9D49-733A16A52C99}</Project>
+      <Name>System.EnterpriseServices-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_4_5.csproj">
-      <Project>{0EDE201B-DEE2-486E-8DF2-F18F9D6239B9}</Project>
-      <Name>System.ServiceModel\System.ServiceModel-net_4_5</Name>
+    <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_2_0.csproj">
+      <Project>{07DAB1EF-2FED-45A6-8627-12B94642C0DA}</Project>
+      <Name>System.ServiceModel-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web.ApplicationServices\System.Web.ApplicationServices-net_4_5.csproj">
-      <Project>{394BAC94-3126-4DAE-8C55-5547372BAB46}</Project>
-      <Name>System.Web.ApplicationServices\System.Web.ApplicationServices-net_4_5</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.ApplicationServices.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.ApplicationServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

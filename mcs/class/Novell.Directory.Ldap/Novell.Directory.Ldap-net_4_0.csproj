@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7738B238-7C12-401A-8CCF-D44B4BD8ABDE}</ProjectGuid>
+    <ProjectGuid>{6F1F00AB-11CF-4A83-AFBF-719EB92F8FE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,612</NoWarn>
     <OutputPath>bin\Debug\Novell.Directory.Ldap-net_4_0</OutputPath>
@@ -46,10 +46,10 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs.in" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Boolean.cs" />
-    <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Choice.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Decoder.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Encoder.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Enumerated.cs" />
+    <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Choice.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Identifier.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Integer.cs" />
     <Compile Include="Novell.Directory.Ldap.Asn1\Asn1Length.cs" />
@@ -74,13 +74,13 @@
     <Compile Include="Novell.Directory.Ldap.Controls\LdapVirtualListResponse.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\BaseEdirEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\BinderyObjectEventData.cs" />
-    <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\ChangeAddressEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\ConnectionStateEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\DebugEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\DebugParameter.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\DSETimeStamp.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\EntryEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\GeneralDSEventData.cs" />
+    <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\ChangeAddressEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\ModuleStateEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\NetworkAddressEventData.cs" />
     <Compile Include="Novell.Directory.Ldap.Events.Edir.EventData\ReferralAddress.cs" />
@@ -105,7 +105,6 @@
     <Compile Include="Novell.Directory.Ldap.Extensions\AbortPartitionOperationRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\AddReplicaRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\BackupRestoreConstants.cs" />
-    <Compile Include="Novell.Directory.Ldap.Extensions\ChangeReplicaTypeRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\GetBindDNRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\GetBindDNResponse.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\GetEffectivePrivilegesRequest.cs" />
@@ -114,6 +113,7 @@
     <Compile Include="Novell.Directory.Ldap.Extensions\GetReplicaInfoResponse.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\GetReplicationFilterRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\GetReplicationFilterResponse.cs" />
+    <Compile Include="Novell.Directory.Ldap.Extensions\ChangeReplicaTypeRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\LdapBackupRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\LdapBackupResponse.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\LdapRestoreRequest.cs" />
@@ -129,9 +129,9 @@
     <Compile Include="Novell.Directory.Ldap.Extensions\RemoveOrphanPartitionRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\RemoveReplicaRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\ReplicationConstants.cs" />
-    <Compile Include="Novell.Directory.Ldap.Extensions\SchemaSyncRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\SendAllUpdatesRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\SetReplicationFilterRequest.cs" />
+    <Compile Include="Novell.Directory.Ldap.Extensions\SchemaSyncRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\SplitOrphanPartitionRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\SplitPartitionRequest.cs" />
     <Compile Include="Novell.Directory.Ldap.Extensions\TriggerBackgroundProcessRequest.cs" />
@@ -186,11 +186,11 @@
     <Compile Include="Novell.Directory.Ldap.Utilclass\AttributeQualifier.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\Base64.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\BindProperties.cs" />
-    <Compile Include="Novell.Directory.Ldap.Utilclass\CharacterTypes.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\DN.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\EnumeratedIterator.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\ExceptionMessages.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\ExtResponseFactory.cs" />
+    <Compile Include="Novell.Directory.Ldap.Utilclass\CharacterTypes.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\IntermediateResponseFactory.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\RDN.cs" />
     <Compile Include="Novell.Directory.Ldap.Utilclass\ReferralInfo.cs" />
@@ -208,8 +208,8 @@
     <Compile Include="Novell.Directory.Ldap\LdapAbandonRequest.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapAddRequest.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapAttribute.cs" />
-    <Compile Include="Novell.Directory.Ldap\LdapAttributeSchema.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapAttributeSet.cs" />
+    <Compile Include="Novell.Directory.Ldap\LdapAttributeSchema.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapAuthHandler.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapAuthProvider.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapBindHandler.cs" />
@@ -244,14 +244,14 @@
     <Compile Include="Novell.Directory.Ldap\LdapReferralHandler.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapResponse.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapResponseQueue.cs" />
-    <Compile Include="Novell.Directory.Ldap\LdapSchema.cs" />
-    <Compile Include="Novell.Directory.Ldap\LdapSchemaElement.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchConstraints.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchQueue.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchRequest.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchResult.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchResultReference.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSearchResults.cs" />
+    <Compile Include="Novell.Directory.Ldap\LdapSchema.cs" />
+    <Compile Include="Novell.Directory.Ldap\LdapSchemaElement.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapSyntaxSchema.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapUnbindRequest.cs" />
     <Compile Include="Novell.Directory.Ldap\LdapUnsolicitedNotificationListener.cs" />
@@ -277,16 +277,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Security\Mono.Security-net_4_0.csproj">
-      <Project>{5E680987-7C43-48A0-9BF1-86124ACA78BD}</Project>
-      <Name>Mono.Security\Mono.Security-net_4_0</Name>
+      <Project>{E25DB03E-73AD-429A-9625-3EC810BE705F}</Project>
+      <Name>Mono.Security-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BA2241DF-BD0E-470F-BF2A-AFD61A5798A6}</ProjectGuid>
+    <ProjectGuid>{6661E397-B6E2-4455-82BF-8048EF46F3AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Web.Mvc2-net_2_0</OutputPath>
@@ -104,7 +104,6 @@
     <Compile Include="System.Web.Mvc\BindAttribute.cs" />
     <Compile Include="System.Web.Mvc\BuildManagerWrapper.cs" />
     <Compile Include="System.Web.Mvc\ByteArrayModelBinder.cs" />
-    <Compile Include="System.Web.Mvc\ChildActionOnlyAttribute.cs" />
     <Compile Include="System.Web.Mvc\ClientDataTypeModelValidatorProvider.cs" />
     <Compile Include="System.Web.Mvc\ContentResult.cs" />
     <Compile Include="System.Web.Mvc\Controller.cs" />
@@ -164,13 +163,13 @@
     <Compile Include="System.Web.Mvc\HandleErrorAttribute.cs" />
     <Compile Include="System.Web.Mvc\HandleErrorInfo.cs" />
     <Compile Include="System.Web.Mvc\HiddenInputAttribute.cs" />
-    <Compile Include="System.Web.Mvc\Html\ChildActionExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\DefaultDisplayTemplates.cs" />
     <Compile Include="System.Web.Mvc\Html\DefaultEditorTemplates.cs" />
     <Compile Include="System.Web.Mvc\Html\DisplayExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\DisplayTextExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\EditorExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\FormExtensions.cs" />
+    <Compile Include="System.Web.Mvc\Html\ChildActionExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\InputExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\LabelExtensions.cs" />
     <Compile Include="System.Web.Mvc\Html\LinkExtensions.cs" />
@@ -195,6 +194,7 @@
     <Compile Include="System.Web.Mvc\HttpRequestExtensions.cs" />
     <Compile Include="System.Web.Mvc\HttpUnauthorizedResult.cs" />
     <Compile Include="System.Web.Mvc\HttpVerbs.cs" />
+    <Compile Include="System.Web.Mvc\ChildActionOnlyAttribute.cs" />
     <Compile Include="System.Web.Mvc\IActionFilter.cs" />
     <Compile Include="System.Web.Mvc\IActionInvoker.cs" />
     <Compile Include="System.Web.Mvc\IAuthorizationFilter.cs" />
@@ -339,52 +339,53 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
-      <Project>{B91370A1-A33A-4F7A-BDF2-1E194AFA0869}</Project>
-      <Name>System.Core\System.Core-net_2_0</Name>
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_2_0.csproj">
-      <Project>{8131BE5D-BE64-4BA5-A62D-FAC4BE0A0B53}</Project>
-      <Name>System.Configuration\System.Configuration-net_2_0</Name>
+      <Project>{AC901491-8842-4ABC-A64C-23B2C7957A27}</Project>
+      <Name>System.Configuration-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_2_0.csproj">
-      <Project>{49220562-83E1-49A2-971F-5D31C4AB0258}</Project>
-      <Name>System.Data\System.Data-net_2_0</Name>
+      <Project>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</Project>
+      <Name>System.Data-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_2_0-2.csproj">
-      <Project>{4F179720-1E19-46E8-A55E-010C20701EFF}</Project>
-      <Name>System.Web\System.Web-net_2_0-2</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\System.Web.Abstractions\System.Web.Abstractions-net_2_0.csproj">
-      <Project>{34AE4A66-1C6E-41EB-BCD7-7541A021FA19}</Project>
-      <Name>System.Web.Abstractions\System.Web.Abstractions-net_2_0</Name>
+      <Project>{948778AA-7A43-406A-BD9E-4360519010FF}</Project>
+      <Name>System.Web.Abstractions-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.Routing\System.Web.Routing-net_2_0.csproj">
-      <Project>{20D4E13A-7CC1-431F-BE4F-BB4BABB657E9}</Project>
-      <Name>System.Web.Routing\System.Web.Routing-net_2_0</Name>
+      <Project>{642AE973-4545-486F-9E61-33D9FD43AAB9}</Project>
+      <Name>System.Web.Routing-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.Extensions\System.Web.Extensions-net_2_0.csproj">
-      <Project>{2081F80F-9D8D-4D22-AF56-367D7BAC61D6}</Project>
-      <Name>System.Web.Extensions\System.Web.Extensions-net_2_0</Name>
+      <Project>{BBEF6FCD-ACD8-419B-9200-DB917BD57575}</Project>
+      <Name>System.Web.Extensions-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_2_0.csproj">
-      <Project>{E3E1BF16-7D12-4CCD-85D0-B542F0AC3442}</Project>
-      <Name>System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_2_0</Name>
+      <Project>{62790D45-D3F3-4C8B-8A98-2A5DE0CB142A}</Project>
+      <Name>System.ComponentModel.DataAnnotations-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data.Linq\System.Data.Linq-net_2_0.csproj">
-      <Project>{CBDA8DA6-4A33-419C-9150-98EA5B3BE543}</Project>
-      <Name>System.Data.Linq\System.Data.Linq-net_2_0</Name>
+      <Project>{210818FE-B8C4-4B2D-B312-7E7A2757FC16}</Project>
+      <Name>System.Data.Linq-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

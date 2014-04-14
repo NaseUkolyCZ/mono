@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E016C66E-35A6-4A95-BD35-AF13FBCD3DA0}</ProjectGuid>
+    <ProjectGuid>{5A19DC4A-AF2E-4563-A343-EE2ED71316D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\WindowsBase-net_4_0</OutputPath>
@@ -67,18 +67,18 @@
     <Compile Include="System.ComponentModel\IItemProperties.cs" />
     <Compile Include="System.ComponentModel\ItemPropertyInfo.cs" />
     <Compile Include="System.ComponentModel\NewItemPlaceholderPosition.cs" />
-    <Compile Include="System.ComponentModel\PropertyChangedEventManager.cs" />
     <Compile Include="System.ComponentModel\PropertyFilterAttribute.cs" />
     <Compile Include="System.ComponentModel\PropertyFilterOptions.cs" />
+    <Compile Include="System.ComponentModel\PropertyChangedEventManager.cs" />
     <Compile Include="System.ComponentModel\SortDescription.cs" />
     <Compile Include="System.ComponentModel\SortDescriptionCollection.cs" />
     <Compile Include="System.Diagnostics\PresentationTraceLevel.cs" />
     <Compile Include="System.Diagnostics\PresentationTraceSources.cs" />
     <Compile Include="System.IO.Packaging\CertificateEmbeddingOption.cs" />
-    <Compile Include="System.IO.Packaging\Check.cs" />
     <Compile Include="System.IO.Packaging\CompressionOption.cs" />
     <Compile Include="System.IO.Packaging\EncryptedPackageEnvelope.cs" />
     <Compile Include="System.IO.Packaging\EncryptionOption.cs" />
+    <Compile Include="System.IO.Packaging\Check.cs" />
     <Compile Include="System.IO.Packaging\InvalidSignatureEventHandler.cs" />
     <Compile Include="System.IO.Packaging\Package.cs" />
     <Compile Include="System.IO.Packaging\PackageDigitalSignature.cs" />
@@ -260,20 +260,20 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Xaml\System.Xaml-net_4_0.csproj">
-      <Project>{98E9FB98-226C-4256-A22A-91819C4C33B6}</Project>
-      <Name>System.Xaml\System.Xaml-net_4_0</Name>
+      <Project>{29BD9140-76C5-43FE-A519-35CF6CC47CAE}</Project>
+      <Name>System.Xaml-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

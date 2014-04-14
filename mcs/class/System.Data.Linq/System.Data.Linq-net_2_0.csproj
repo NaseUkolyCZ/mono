@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CBDA8DA6-4A33-419C-9150-98EA5B3BE543}</ProjectGuid>
+    <ProjectGuid>{210818FE-B8C4-4B2D-B312-7E7A2757FC16}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,1720</NoWarn>
     <OutputPath>bin\Debug\System.Data.Linq-net_2_0</OutputPath>
@@ -102,8 +102,6 @@
     <Compile Include="src\DbLinq.SqlServer\SqlServerSqlProvider.cs" />
     <Compile Include="src\DbLinq.SqlServer\SqlServerTypeConversions.cs" />
     <Compile Include="src\DbLinq.SqlServer\SqlServerVendor.cs" />
-    <Compile Include="src\DbLinq\Data\Linq\ChangeAction.cs" />
-    <Compile Include="src\DbLinq\Data\Linq\ChangeSet.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Database\IDatabaseContext.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Database\IDatabaseTransaction.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Database\Implementation\DatabaseConnection.cs" />
@@ -116,6 +114,8 @@
     <Compile Include="src\DbLinq\Data\Linq\DBLinqExtendedAttributte.cs" />
     <Compile Include="src\DbLinq\Data\Linq\EntityRef.cs" />
     <Compile Include="src\DbLinq\Data\Linq\EntitySet.cs" />
+    <Compile Include="src\DbLinq\Data\Linq\ChangeAction.cs" />
+    <Compile Include="src\DbLinq\Data\Linq\ChangeSet.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Identity\IdentityKey.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Identity\IIdentityProvider.cs" />
     <Compile Include="src\DbLinq\Data\Linq\Identity\IIdentityReader.cs" />
@@ -269,9 +269,9 @@
     <Compile Include="src\DbLinq\Schema\Dbml\Adapter\ISimpleList.cs" />
     <Compile Include="src\DbLinq\Schema\Dbml\Adapter\SpecifiedPropertyUpdater.cs" />
     <Compile Include="src\DbLinq\Schema\Dbml\DatabaseSerializer.cs" />
+    <Compile Include="src\DbLinq\Schema\Dbml\DbmlSerializer.cs" />
     <Compile Include="src\DbLinq\Schema\Dbml\DbmlSchema.Adapter.cs" />
     <Compile Include="src\DbLinq\Schema\Dbml\DbmlSchema.cs" />
-    <Compile Include="src\DbLinq\Schema\Dbml\DbmlSerializer.cs" />
     <Compile Include="src\DbLinq\Schema\Implementation\NameFormatter.cs" />
     <Compile Include="src\DbLinq\Schema\INameFormatter.cs" />
     <Compile Include="src\DbLinq\Schema\Name.cs" />
@@ -283,13 +283,13 @@
     <Compile Include="src\DbLinq\Schema\WordsExtraction.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\Assembly\AssemblyInfo.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\Binary.cs" />
-    <Compile Include="src\DbLinq\System.Data.Linq\ChangeConflictCollection.cs" />
-    <Compile Include="src\DbLinq\System.Data.Linq\ChangeConflictException.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\CompiledQuery.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\ConflictMode.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\DBConvert.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\DuplicateKeyException.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\ForeignKeyReferenceAlreadyHasValueException.cs" />
+    <Compile Include="src\DbLinq\System.Data.Linq\ChangeConflictCollection.cs" />
+    <Compile Include="src\DbLinq\System.Data.Linq\ChangeConflictException.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\IFunctionResult.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\IMultipleResults.cs" />
     <Compile Include="src\DbLinq\System.Data.Linq\ISingleResult.cs" />
@@ -325,8 +325,8 @@
     <Compile Include="src\DbLinq\System.Data.Linq\System.Data.Linq.SqlClient\SqlProvider.cs" />
     <Compile Include="src\DbLinq\Util\DataCommand.cs" />
     <Compile Include="src\DbLinq\Util\DbmlExtensions.cs" />
-    <Compile Include="src\DbLinq\Util\ExpressionChainEqualityComparer.cs" />
     <Compile Include="src\DbLinq\Util\ExpressionEqualityComparer.cs" />
+    <Compile Include="src\DbLinq\Util\ExpressionChainEqualityComparer.cs" />
     <Compile Include="src\DbLinq\Util\IDataRecordExtensions.cs" />
     <Compile Include="src\DbLinq\Util\IDataTypeExtensions.cs" />
     <Compile Include="src\DbLinq\Util\IDbDataParameterExtensions.cs" />
@@ -385,28 +385,28 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
-      <Project>{B91370A1-A33A-4F7A-BDF2-1E194AFA0869}</Project>
-      <Name>System.Core\System.Core-net_2_0</Name>
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_2_0.csproj">
-      <Project>{49220562-83E1-49A2-971F-5D31C4AB0258}</Project>
-      <Name>System.Data\System.Data-net_2_0</Name>
+      <Project>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</Project>
+      <Name>System.Data-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
-      <Project>{FBE202BB-4389-49E8-A81F-155E92BF1B0B}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_2_0</Name>
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

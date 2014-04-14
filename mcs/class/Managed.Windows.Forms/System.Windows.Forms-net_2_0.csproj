@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{19413C30-6E39-4AAC-B9D1-FC88082E74C8}</ProjectGuid>
+    <ProjectGuid>{57D77C75-B43F-4D8D-A746-90726BC2C9E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,618,612,809</NoWarn>
     <OutputPath>bin\Debug\System.Windows.Forms-net_2_0</OutputPath>
@@ -93,14 +93,14 @@
     <Compile Include="System.Windows.Forms.Layout\TableLayout.cs" />
     <Compile Include="System.Windows.Forms.Layout\TableLayoutSettingsTypeConverter.cs" />
     <Compile Include="System.Windows.Forms.PropertyGridInternal\PropertiesTab.cs" />
-    <Compile Include="System.Windows.Forms.RTF\Charcode.cs" />
-    <Compile Include="System.Windows.Forms.RTF\Charset.cs" />
-    <Compile Include="System.Windows.Forms.RTF\CharsetFlags.cs" />
-    <Compile Include="System.Windows.Forms.RTF\CharsetType.cs" />
     <Compile Include="System.Windows.Forms.RTF\ClassDelegate.cs" />
     <Compile Include="System.Windows.Forms.RTF\Color.cs" />
     <Compile Include="System.Windows.Forms.RTF\DestinationDelegate.cs" />
     <Compile Include="System.Windows.Forms.RTF\Font.cs" />
+    <Compile Include="System.Windows.Forms.RTF\Charcode.cs" />
+    <Compile Include="System.Windows.Forms.RTF\Charset.cs" />
+    <Compile Include="System.Windows.Forms.RTF\CharsetFlags.cs" />
+    <Compile Include="System.Windows.Forms.RTF\CharsetType.cs" />
     <Compile Include="System.Windows.Forms.RTF\KeysInit.cs" />
     <Compile Include="System.Windows.Forms.RTF\KeyStruct.cs" />
     <Compile Include="System.Windows.Forms.RTF\Major.cs" />
@@ -132,7 +132,6 @@
     <Compile Include="System.Windows.Forms.VisualStyles\BackgroundType.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\BooleanProperty.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\BorderType.cs" />
-    <Compile Include="System.Windows.Forms.VisualStyles\CheckBoxState.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\ColorProperty.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\ComboBoxState.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\ContentAlignment.cs" />
@@ -150,6 +149,7 @@
     <Compile Include="System.Windows.Forms.VisualStyles\HitTestCode.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\HitTestOptions.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\HorizontalAlign.cs" />
+    <Compile Include="System.Windows.Forms.VisualStyles\CheckBoxState.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\IconEffect.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\ImageOrientation.cs" />
     <Compile Include="System.Windows.Forms.VisualStyles\ImageSelectType.cs" />
@@ -240,11 +240,6 @@
     <Compile Include="System.Windows.Forms\CacheVirtualItemsEventHandler.cs" />
     <Compile Include="System.Windows.Forms\CaptionButton.cs" />
     <Compile Include="System.Windows.Forms\CategoryGridEntry.cs" />
-    <Compile Include="System.Windows.Forms\CharacterCasing.cs" />
-    <Compile Include="System.Windows.Forms\CheckBox.cs" />
-    <Compile Include="System.Windows.Forms\CheckBoxRenderer.cs" />
-    <Compile Include="System.Windows.Forms\CheckedListBox.cs" />
-    <Compile Include="System.Windows.Forms\CheckState.cs" />
     <Compile Include="System.Windows.Forms\Clipboard.cs" />
     <Compile Include="System.Windows.Forms\CloseReason.cs" />
     <Compile Include="System.Windows.Forms\ColorDepth.cs" />
@@ -347,8 +342,6 @@
     <Compile Include="System.Windows.Forms\DataGridViewCellValidatingEventHandler.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewCellValueEventArgs.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewCellValueEventHandler.cs" />
-    <Compile Include="System.Windows.Forms\DataGridViewCheckBoxCell.cs" />
-    <Compile Include="System.Windows.Forms\DataGridViewCheckBoxColumn.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewClipboardCopyMode.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewColumn.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewColumnCollection.cs" />
@@ -378,6 +371,8 @@
     <Compile Include="System.Windows.Forms\DataGridViewHeaderBorderStyle.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewHeaderCell.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewHitTestType.cs" />
+    <Compile Include="System.Windows.Forms\DataGridViewCheckBoxCell.cs" />
+    <Compile Include="System.Windows.Forms\DataGridViewCheckBoxColumn.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewImageCell.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewImageCellLayout.cs" />
     <Compile Include="System.Windows.Forms\DataGridViewImageColumn.cs" />
@@ -515,6 +510,11 @@
     <Compile Include="System.Windows.Forms\HtmlWindow.cs" />
     <Compile Include="System.Windows.Forms\HtmlWindowCollection.cs" />
     <Compile Include="System.Windows.Forms\Hwnd.cs" />
+    <Compile Include="System.Windows.Forms\CharacterCasing.cs" />
+    <Compile Include="System.Windows.Forms\CheckBox.cs" />
+    <Compile Include="System.Windows.Forms\CheckBoxRenderer.cs" />
+    <Compile Include="System.Windows.Forms\CheckedListBox.cs" />
+    <Compile Include="System.Windows.Forms\CheckState.cs" />
     <Compile Include="System.Windows.Forms\IBindableComponent.cs" />
     <Compile Include="System.Windows.Forms\IBounds.cs" />
     <Compile Include="System.Windows.Forms\IButtonControl.cs" />
@@ -542,11 +542,11 @@
     <Compile Include="System.Windows.Forms\ImplicitHScrollBar.cs" />
     <Compile Include="System.Windows.Forms\ImplicitVScrollBar.cs" />
     <Compile Include="System.Windows.Forms\InputLanguage.cs" />
+    <Compile Include="System.Windows.Forms\InputLanguageCollection.cs" />
     <Compile Include="System.Windows.Forms\InputLanguageChangedEventArgs.cs" />
     <Compile Include="System.Windows.Forms\InputLanguageChangedEventHandler.cs" />
     <Compile Include="System.Windows.Forms\InputLanguageChangingEventArgs.cs" />
     <Compile Include="System.Windows.Forms\InputLanguageChangingEventHandler.cs" />
-    <Compile Include="System.Windows.Forms\InputLanguageCollection.cs" />
     <Compile Include="System.Windows.Forms\InsertKeyMode.cs" />
     <Compile Include="System.Windows.Forms\InternalWindowManager.cs" />
     <Compile Include="System.Windows.Forms\InvalidateEventArgs.cs" />
@@ -554,14 +554,14 @@
     <Compile Include="System.Windows.Forms\IRootGridEntry.cs" />
     <Compile Include="System.Windows.Forms\ItemActivation.cs" />
     <Compile Include="System.Windows.Forms\ItemBoundsPortion.cs" />
+    <Compile Include="System.Windows.Forms\ItemDragEventArgs.cs" />
+    <Compile Include="System.Windows.Forms\ItemDragEventHandler.cs" />
     <Compile Include="System.Windows.Forms\ItemChangedEventArgs.cs" />
     <Compile Include="System.Windows.Forms\ItemChangedEventHandler.cs" />
     <Compile Include="System.Windows.Forms\ItemCheckedEventArgs.cs" />
     <Compile Include="System.Windows.Forms\ItemCheckedEventHandler.cs" />
     <Compile Include="System.Windows.Forms\ItemCheckEventArgs.cs" />
     <Compile Include="System.Windows.Forms\ItemCheckEventHandler.cs" />
-    <Compile Include="System.Windows.Forms\ItemDragEventArgs.cs" />
-    <Compile Include="System.Windows.Forms\ItemDragEventHandler.cs" />
     <Compile Include="System.Windows.Forms\IToolStripData.cs" />
     <Compile Include="System.Windows.Forms\IWin32Window.cs" />
     <Compile Include="System.Windows.Forms\IWindowTarget.cs" />
@@ -710,6 +710,7 @@
     <Compile Include="System.Windows.Forms\RelatedPropertyManager.cs" />
     <Compile Include="System.Windows.Forms\RetrieveVirtualItemEventArgs.cs" />
     <Compile Include="System.Windows.Forms\RetrieveVirtualItemEventHandler.cs" />
+    <Compile Include="System.Windows.Forms\RightToLeft.cs" />
     <Compile Include="System.Windows.Forms\RichTextBox.cs" />
     <Compile Include="System.Windows.Forms\RichTextBoxFinds.cs" />
     <Compile Include="System.Windows.Forms\RichTextBoxLanguageOptions.cs" />
@@ -718,7 +719,6 @@
     <Compile Include="System.Windows.Forms\RichTextBoxSelectionTypes.cs" />
     <Compile Include="System.Windows.Forms\RichTextBoxStreamType.cs" />
     <Compile Include="System.Windows.Forms\RichTextBoxWordPunctuations.cs" />
-    <Compile Include="System.Windows.Forms\RightToLeft.cs" />
     <Compile Include="System.Windows.Forms\RootGridEntry.cs" />
     <Compile Include="System.Windows.Forms\RowStyle.cs" />
     <Compile Include="System.Windows.Forms\SaveFileDialog.cs" />
@@ -970,44 +970,44 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Drawing\System.Drawing-net_2_0.csproj">
-      <Project>{CA7E5301-90D2-4C07-87B7-851AA216D4C9}</Project>
-      <Name>System.Drawing\System.Drawing-net_2_0</Name>
+      <Project>{AA43BEFC-33A6-4C4C-9C42-27E34EA95E8A}</Project>
+      <Name>System.Drawing-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Accessibility\Accessibility-net_2_0.csproj">
-      <Project>{6088F0A1-9658-4B71-86DB-8685B9279154}</Project>
-      <Name>Accessibility\Accessibility-net_2_0</Name>
+      <Project>{E4951517-D8DD-4DA5-ABFB-39EB6047A572}</Project>
+      <Name>Accessibility-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_2_0.csproj">
-      <Project>{49220562-83E1-49A2-971F-5D31C4AB0258}</Project>
-      <Name>System.Data\System.Data-net_2_0</Name>
+      <Project>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</Project>
+      <Name>System.Data-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Posix\Mono.Posix-net_2_0.csproj">
-      <Project>{F83F663F-89F7-481C-941E-E4FE67867254}</Project>
-      <Name>Mono.Posix\Mono.Posix-net_2_0</Name>
+      <Project>{66499FFF-20CE-407F-8D86-E68D6C36EE26}</Project>
+      <Name>Mono.Posix-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.WebBrowser\Mono.WebBrowser-net_2_0.csproj">
-      <Project>{9ABD3BD7-C90F-4137-BC85-A3EEE10473BA}</Project>
-      <Name>Mono.WebBrowser\Mono.WebBrowser-net_2_0</Name>
+      <Project>{A01FBBF2-1091-45E0-97BB-0EE631CC0631}</Project>
+      <Name>Mono.WebBrowser-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_2_0.csproj">
-      <Project>{8131BE5D-BE64-4BA5-A62D-FAC4BE0A0B53}</Project>
-      <Name>System.Configuration\System.Configuration-net_2_0</Name>
+      <Project>{AC901491-8842-4ABC-A64C-23B2C7957A27}</Project>
+      <Name>System.Configuration-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Serialization.Formatters.Soap\System.Runtime.Serialization.Formatters.Soap-net_2_0.csproj">
-      <Project>{85526C39-79CA-40DB-940A-3C83DF30DF85}</Project>
-      <Name>System.Runtime.Serialization.Formatters.Soap\System.Runtime.Serialization.Formatters.Soap-net_2_0</Name>
+      <Project>{76857000-E0D5-4246-A913-262174D017C9}</Project>
+      <Name>System.Runtime.Serialization.Formatters.Soap-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

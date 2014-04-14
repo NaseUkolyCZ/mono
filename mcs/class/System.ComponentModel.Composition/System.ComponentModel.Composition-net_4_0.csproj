@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FD3CE1C9-E645-48F4-9815-A6359813AF4D}</ProjectGuid>
+    <ProjectGuid>{31960C04-F30C-4C52-9B0A-7A702D6C0EE4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.ComponentModel.Composition-net_4_0</OutputPath>
@@ -76,7 +76,6 @@
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\AttributedModel\AttributedModelDiscovery.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\AttributedModel\AttributedPartCreationInfo.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\AttributedModelServices.cs" />
-    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\ChangeRejectedException.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\CompositionContractMismatchException.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\CompositionError.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\CompositionErrorDebuggerProxy.cs" />
@@ -106,12 +105,12 @@
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\AssemblyCatalogDebuggerProxy.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\AtomicComposition.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\AtomicCompositionExtensions.cs" />
-    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CatalogExportProvider.CatalogChangeProxy.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CatalogExportProvider.CatalogExport.cs" />
+    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CatalogExportProvider.CatalogChangeProxy.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CatalogExportProvider.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CatalogExportProvider.PartCreatorExport.cs" />
-    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\ComposablePartCatalogChangeEventArgs.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\ComposablePartCatalogCollection.cs" />
+    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\ComposablePartCatalogChangeEventArgs.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\ComposablePartExportProvider.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CompositionBatch.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\CompositionBatch.SingleExportComposablePart.cs" />
@@ -130,6 +129,7 @@
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\ImportEngine.RecompositionManager.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\INotifyComposablePartCatalogChanged.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\Hosting\TypeCatalog.cs" />
+    <Compile Include="src\ComponentModel\System\ComponentModel\Composition\ChangeRejectedException.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\IAttributedImport.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\ICompositionError.cs" />
     <Compile Include="src\ComponentModel\System\ComponentModel\Composition\ICompositionService.cs" />
@@ -214,16 +214,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

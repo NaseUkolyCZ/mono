@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F83F663F-89F7-481C-941E-E4FE67867254}</ProjectGuid>
+    <ProjectGuid>{66499FFF-20CE-407F-8D86-E68D6C36EE26}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,618,612</NoWarn>
     <OutputPath>bin\Debug\Mono.Posix-net_2_0</OutputPath>
@@ -56,11 +56,11 @@
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixBinaryCore.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSink.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSinkProvider.cs" />
-    <Compile Include=".\Mono.Remoting.Channels.Unix\UnixChannel.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixClientChannel.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixClientTransportSink.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixClientTransportSinkProvider.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixConnectionPool.cs" />
+    <Compile Include=".\Mono.Remoting.Channels.Unix\UnixChannel.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixMessageIO.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixServerChannel.cs" />
     <Compile Include=".\Mono.Remoting.Channels.Unix\UnixServerTransportSink.cs" />
@@ -118,12 +118,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0.csproj">
-      <Project>{245C754C-D6DE-4434-BA78-37A93E196236}</Project>
-      <Name>System\System-net_2_0</Name>
+      <Project>{D841DBC4-1C3C-4925-8DFD-B7A0095B67EF}</Project>
+      <Name>System-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

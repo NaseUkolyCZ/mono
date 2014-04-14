@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{98E9FB98-226C-4256-A22A-91819C4C33B6}</ProjectGuid>
+    <ProjectGuid>{29BD9140-76C5-43FE-A519-35CF6CC47CAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Xaml-net_4_0</OutputPath>
@@ -153,10 +153,10 @@
     <Compile Include="System.Xaml\XamlParseException.cs" />
     <Compile Include="System.Xaml\XamlReader.cs" />
     <Compile Include="System.Xaml\XamlReaderSettings.cs" />
+    <Compile Include="System.Xaml\XamlServices.cs" />
     <Compile Include="System.Xaml\XamlSchemaContext.cs" />
     <Compile Include="System.Xaml\XamlSchemaContextSettings.cs" />
     <Compile Include="System.Xaml\XamlSchemaException.cs" />
-    <Compile Include="System.Xaml\XamlServices.cs" />
     <Compile Include="System.Xaml\XamlSubtreeReader.cs" />
     <Compile Include="System.Xaml\XamlType.cs" />
     <Compile Include="System.Xaml\XamlWriter.cs" />
@@ -185,20 +185,20 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

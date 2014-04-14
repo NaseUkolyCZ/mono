@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{523E59D0-4059-4E06-95DA-691E167615A7}</ProjectGuid>
+    <ProjectGuid>{2E1F0481-444B-4A17-8632-4D7BA6553C02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\mcs-build</OutputPath>
@@ -127,8 +127,8 @@ $(ProjectDir)\..\jay\jay.exe -ct &lt; $(ProjectDir)\..\jay\skeleton.cs $(Project
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-build.csproj">
-      <Project>{2BD930A2-88A9-4AD0-ADE7-1531552DF896}</Project>
-      <Name>corlib\corlib-build</Name>
+      <Project>{AAAB3B28-A455-4321-AD14-1C238CEC2B8E}</Project>
+      <Name>corlib-build</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

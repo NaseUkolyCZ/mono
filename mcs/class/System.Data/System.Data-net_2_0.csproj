@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{49220562-83E1-49A2-971F-5D31C4AB0258}</ProjectGuid>
+    <ProjectGuid>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,649</NoWarn>
     <OutputPath>bin\Debug\System.Data-net_2_0</OutputPath>
@@ -237,12 +237,12 @@
     <Compile Include="System.Data.SqlTypes\SqlBoolean.cs" />
     <Compile Include="System.Data.SqlTypes\SqlByte.cs" />
     <Compile Include="System.Data.SqlTypes\SqlBytes.cs" />
-    <Compile Include="System.Data.SqlTypes\SqlChars.cs" />
     <Compile Include="System.Data.SqlTypes\SqlCompareOptions.cs" />
     <Compile Include="System.Data.SqlTypes\SqlDateTime.cs" />
     <Compile Include="System.Data.SqlTypes\SqlDecimal.cs" />
     <Compile Include="System.Data.SqlTypes\SqlDouble.cs" />
     <Compile Include="System.Data.SqlTypes\SqlGuid.cs" />
+    <Compile Include="System.Data.SqlTypes\SqlChars.cs" />
     <Compile Include="System.Data.SqlTypes\SqlInt16.cs" />
     <Compile Include="System.Data.SqlTypes\SqlInt32.cs" />
     <Compile Include="System.Data.SqlTypes\SqlInt64.cs" />
@@ -268,9 +268,9 @@
     <Compile Include="System.Data\CustomDataClassGenerator.cs" />
     <Compile Include="System.Data\DataCategoryAttribute.cs" />
     <Compile Include="System.Data\DataColumn.cs" />
+    <Compile Include="System.Data\DataColumnCollection.cs" />
     <Compile Include="System.Data\DataColumnChangeEventArgs.cs" />
     <Compile Include="System.Data\DataColumnChangeEventHandler.cs" />
-    <Compile Include="System.Data\DataColumnCollection.cs" />
     <Compile Include="System.Data\DataColumnPropertyDescriptor.cs" />
     <Compile Include="System.Data\DataException.cs" />
     <Compile Include="System.Data\DataRelation.cs" />
@@ -279,9 +279,9 @@
     <Compile Include="System.Data\DataRow.cs" />
     <Compile Include="System.Data\DataRowAction.cs" />
     <Compile Include="System.Data\DataRowBuilder.cs" />
+    <Compile Include="System.Data\DataRowCollection.cs" />
     <Compile Include="System.Data\DataRowChangeEventArgs.cs" />
     <Compile Include="System.Data\DataRowChangeEventHandler.cs" />
-    <Compile Include="System.Data\DataRowCollection.cs" />
     <Compile Include="System.Data\DataRowState.cs" />
     <Compile Include="System.Data\DataRowVersion.cs" />
     <Compile Include="System.Data\DataRowView.cs" />
@@ -353,9 +353,9 @@
     <Compile Include="System.Data\ResDescriptionAttribute.cs" />
     <Compile Include="System.Data\RowNotInTableException.cs" />
     <Compile Include="System.Data\Rule.cs" />
+    <Compile Include="System.Data\SerializationFormat.cs" />
     <Compile Include="System.Data\SchemaSerializationMode.cs" />
     <Compile Include="System.Data\SchemaType.cs" />
-    <Compile Include="System.Data\SerializationFormat.cs" />
     <Compile Include="System.Data\SqlDbType.cs" />
     <Compile Include="System.Data\StateChangeEventArgs.cs" />
     <Compile Include="System.Data\StateChangeEventHandler.cs" />
@@ -401,32 +401,32 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.EnterpriseServices\System.EnterpriseServices-net_2_0.csproj">
-      <Project>{92E7A483-839B-4EFA-A77D-16C68F051941}</Project>
-      <Name>System.EnterpriseServices\System.EnterpriseServices-net_2_0</Name>
+      <Project>{68644D58-4360-4B2A-AC0C-5891F162D369}</Project>
+      <Name>System.EnterpriseServices-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Data.Tds\Mono.Data.Tds-net_2_0.csproj">
-      <Project>{99315C7A-EEDA-4247-96F4-14924760DB8B}</Project>
-      <Name>Mono.Data.Tds\Mono.Data.Tds-net_2_0</Name>
+      <Project>{0B542AEC-9DF8-4ADD-B9E3-18047514E337}</Project>
+      <Name>Mono.Data.Tds-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_2_0.csproj">
-      <Project>{8131BE5D-BE64-4BA5-A62D-FAC4BE0A0B53}</Project>
-      <Name>System.Configuration\System.Configuration-net_2_0</Name>
+      <Project>{AC901491-8842-4ABC-A64C-23B2C7957A27}</Project>
+      <Name>System.Configuration-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Transactions\System.Transactions-net_2_0.csproj">
-      <Project>{DD1B3195-5FEA-46A2-99B5-9839CA60485C}</Project>
-      <Name>System.Transactions\System.Transactions-net_2_0</Name>
+      <Project>{2DFCF717-DC1B-4B33-9449-F692C5B2AD6F}</Project>
+      <Name>System.Transactions-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

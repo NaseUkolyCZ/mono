@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{475537C3-F2C7-42FD-8AF9-871BC6266BAA}</ProjectGuid>
+    <ProjectGuid>{E5005B67-4887-45B9-8B24-F5A35A298E3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\I18N.MidEast-net_4_5</OutputPath>
@@ -52,7 +52,8 @@
     <Compile Include="CP28596.cs" />
     <Compile Include="CP28598.cs" />
     <Compile Include="CP28599.cs" />
-    <Compile Include="CP38598.cs" />  </ItemGroup>
+    <Compile Include="CP38598.cs" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -62,20 +63,19 @@
   -->
   <PropertyGroup>
     <PreBuildEvent>
-
     </PreBuildEvent>
     <PostBuildEvent>
       xcopy $(TargetName).* $(ProjectDir)..\lib\net_4_5\ /Y /R /D
   </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+    <ProjectReference Include="..\..\corlib\corlib-net_4_5.csproj">
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\I18N\Common\I18N-net_4_5.csproj">
-      <Project>{8A8D5677-ACBD-40B4-916D-B9B5451F713D}</Project>
-      <Name>Common\I18N-net_4_5</Name>
+    <ProjectReference Include="..\Common\I18N-net_4_5.csproj">
+      <Project>{057001FE-4713-40DC-98A1-AE42933364E0}</Project>
+      <Name>I18N-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{03DD638D-4D60-42BB-94D6-3C7112C62C20}</ProjectGuid>
+    <ProjectGuid>{F812B50D-D406-49F8-949B-0AFEDF5C44FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Reactive.Providers-net_4_5</OutputPath>
@@ -74,28 +74,28 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
-      <Project>{D8260595-C32F-4AC3-9C01-2CD2528CFA1D}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Reactive.Interfaces\System.Reactive.Interfaces-net_4_5.csproj">
-      <Project>{D80FD091-3F53-4879-B0BB-08897139CF97}</Project>
-      <Name>System.Reactive.Interfaces\System.Reactive.Interfaces-net_4_5</Name>
+      <Project>{03FCDC15-412F-4897-8408-E494019EA0E6}</Project>
+      <Name>System.Reactive.Interfaces-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Reactive.Core\System.Reactive.Core-net_4_5.csproj">
-      <Project>{CC4B4666-F6F2-4E54-8AF9-656A76A3F0DF}</Project>
-      <Name>System.Reactive.Core\System.Reactive.Core-net_4_5</Name>
+      <Project>{54A7D8A0-8B02-499E-9A5A-7B197E43C7B9}</Project>
+      <Name>System.Reactive.Core-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Reactive.Linq\System.Reactive.Linq-net_4_5.csproj">
-      <Project>{83E7D015-CA2B-4B3D-A764-DB8C3A9B3EEE}</Project>
-      <Name>System.Reactive.Linq\System.Reactive.Linq-net_4_5</Name>
+      <Project>{3633CBA5-3145-4D4D-8890-8A166EE07171}</Project>
+      <Name>System.Reactive.Linq-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

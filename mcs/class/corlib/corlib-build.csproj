@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2BD930A2-88A9-4AD0-ADE7-1531552DF896}</ProjectGuid>
+    <ProjectGuid>{AAAB3B28-A455-4321-AD14-1C238CEC2B8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>612,618,1699</NoWarn>
     <OutputPath>bin\Debug\corlib-build</OutputPath>
@@ -75,11 +75,11 @@
     <Compile Include="..\Mono.Security\Mono.Security.X509\X501Name.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509Certificate.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509CertificateCollection.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Chain.cs" />
-    <Compile Include="..\Mono.Security\Mono.Security.X509\X509ChainStatusFlags.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509CRL.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extension.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509Extensions.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509Chain.cs" />
+    <Compile Include="..\Mono.Security\Mono.Security.X509\X509ChainStatusFlags.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509Store.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509StoreManager.cs" />
     <Compile Include="..\Mono.Security\Mono.Security.X509\X509Stores.cs" />
@@ -235,6 +235,14 @@
     <Compile Include="System.Diagnostics.SymbolStore\SymDocumentType.cs" />
     <Compile Include="System.Diagnostics.SymbolStore\SymLanguageType.cs" />
     <Compile Include="System.Diagnostics.SymbolStore\SymLanguageVendor.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventAttribute.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventCommand.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventCommandEventArgs.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventKeywords.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventLevel.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventSource.cs" />
+    <Compile Include="System.Diagnostics.Tracing\EventSourceAttribute.cs" />
+    <Compile Include="System.Diagnostics.Tracing\NonEventAttribute.cs" />
     <Compile Include="System.Diagnostics\ConditionalAttribute.cs" />
     <Compile Include="System.Diagnostics\DebuggableAttribute.cs" />
     <Compile Include="System.Diagnostics\Debugger.cs" />
@@ -253,8 +261,6 @@
     <Compile Include="System.Globalization\CalendarAlgorithmType.cs" />
     <Compile Include="System.Globalization\CalendarWeekRule.cs" />
     <Compile Include="System.Globalization\CalendricalCalculations.cs" />
-    <Compile Include="System.Globalization\CharUnicodeInfo.cs" />
-    <Compile Include="System.Globalization\ChineseLunisolarCalendar.cs" />
     <Compile Include="System.Globalization\CodePageDataItem.cs" />
     <Compile Include="System.Globalization\CompareInfo.cs" />
     <Compile Include="System.Globalization\CompareOptions.cs" />
@@ -270,6 +276,8 @@
     <Compile Include="System.Globalization\GregorianCalendarTypes.cs" />
     <Compile Include="System.Globalization\HebrewCalendar.cs" />
     <Compile Include="System.Globalization\HijriCalendar.cs" />
+    <Compile Include="System.Globalization\CharUnicodeInfo.cs" />
+    <Compile Include="System.Globalization\ChineseLunisolarCalendar.cs" />
     <Compile Include="System.Globalization\IdnMapping.cs" />
     <Compile Include="System.Globalization\JapaneseCalendar.cs" />
     <Compile Include="System.Globalization\JapaneseLunisolarCalendar.cs" />
@@ -281,6 +289,7 @@
     <Compile Include="System.Globalization\PersianCalendar.cs" />
     <Compile Include="System.Globalization\RegionInfo.cs" />
     <Compile Include="System.Globalization\RegionInfo.MonoTouch.cs" />
+    <Compile Include="System.Globalization\SortVersion.cs" />
     <Compile Include="System.Globalization\StringInfo.cs" />
     <Compile Include="System.Globalization\TaiwanCalendar.cs" />
     <Compile Include="System.Globalization\TaiwanLunisolarCalendar.cs" />
@@ -459,6 +468,7 @@
     <Compile Include="System.Reflection\MonoGenericMethod.cs" />
     <Compile Include="System.Reflection\MonoMethod.cs" />
     <Compile Include="System.Reflection\MonoModule.cs" />
+    <Compile Include="System.Reflection\MonoParameterInfo.cs" />
     <Compile Include="System.Reflection\MonoProperty.cs" />
     <Compile Include="System.Reflection\ObfuscateAssemblyAttribute.cs" />
     <Compile Include="System.Reflection\ObfuscationAttribute.cs" />
@@ -625,6 +635,18 @@
     <Compile Include="System.Runtime.InteropServices.ComTypes\VARFLAGS.cs" />
     <Compile Include="System.Runtime.InteropServices.ComTypes\VARKIND.cs" />
     <Compile Include="System.Runtime.InteropServices.Expando\IExpando.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\DefaultInterfaceAttribute.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\DesignerNamespaceResolveEventArgs.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\EventRegistrationToken.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\EventRegistrationTokenTable.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\IActivationFactory.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\InterfaceImplementedInVersionAttribute.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\NamespaceResolveEventArgs.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\ReadOnlyArrayAttribute.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\ReturnValueNameAttribute.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\WindowsRuntimeMarshal.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\WindowsRuntimeMetadata.cs" />
+    <Compile Include="System.Runtime.InteropServices.WindowsRuntime\WriteOnlyArrayAttribute.cs" />
     <Compile Include="System.Runtime.InteropServices\_Activator.cs" />
     <Compile Include="System.Runtime.InteropServices\_Assembly.cs" />
     <Compile Include="System.Runtime.InteropServices\_AssemblyBuilder.cs" />
@@ -666,7 +688,6 @@
     <Compile Include="System.Runtime.InteropServices\BStrWrapper.cs" />
     <Compile Include="System.Runtime.InteropServices\CALLCONV.cs" />
     <Compile Include="System.Runtime.InteropServices\CallingConvention.cs" />
-    <Compile Include="System.Runtime.InteropServices\CharSet.cs" />
     <Compile Include="System.Runtime.InteropServices\ClassInterfaceAttribute.cs" />
     <Compile Include="System.Runtime.InteropServices\ClassInterfaceType.cs" />
     <Compile Include="System.Runtime.InteropServices\CoClassAttribute.cs" />
@@ -707,6 +728,7 @@
     <Compile Include="System.Runtime.InteropServices\GCHandleType.cs" />
     <Compile Include="System.Runtime.InteropServices\GuidAttribute.cs" />
     <Compile Include="System.Runtime.InteropServices\HandleRef.cs" />
+    <Compile Include="System.Runtime.InteropServices\CharSet.cs" />
     <Compile Include="System.Runtime.InteropServices\ICustomAdapter.cs" />
     <Compile Include="System.Runtime.InteropServices\ICustomFactory.cs" />
     <Compile Include="System.Runtime.InteropServices\ICustomMarshaler.cs" />
@@ -804,45 +826,11 @@
     <Compile Include="System.Runtime.Remoting.Activation\RemoteActivationAttribute.cs" />
     <Compile Include="System.Runtime.Remoting.Activation\RemoteActivator.cs" />
     <Compile Include="System.Runtime.Remoting.Activation\UrlAttribute.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\AggregateDictionary.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelObjectWithProperties.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelSinkWithProperties.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelWithProperties.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ChannelDataStore.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ChannelServices.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ChannelSinkStackEntry.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ClientChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\CrossAppDomainChannel.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannel.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannelDataStore.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannelReceiver.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannelReceiverHook.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannelSender.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IChannelSinkBase.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSink.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSinkProvider.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientFormatterSink.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientFormatterSinkProvider.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IClientResponseChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ISecurableChannel.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSink.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSinkProvider.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IServerFormatterSinkProvider.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\IServerResponseChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ITransportHeaders.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ServerChannelSinkStack.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ServerDispatchSink.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ServerDispatchSinkProvider.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\ServerProcessing.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\SinkProviderData.cs" />
-    <Compile Include="System.Runtime.Remoting.Channels\TransportHeaders.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\Context.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\ContextAttribute.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\ContextProperty.cs" />
-    <Compile Include="System.Runtime.Remoting.Contexts\CrossContextChannel.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\CrossContextDelegate.cs" />
+    <Compile Include="System.Runtime.Remoting.Contexts\CrossContextChannel.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\IContextAttribute.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\IContextProperty.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\IContextPropertyActivator.cs" />
@@ -854,6 +842,40 @@
     <Compile Include="System.Runtime.Remoting.Contexts\IDynamicMessageSink.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\IDynamicProperty.cs" />
     <Compile Include="System.Runtime.Remoting.Contexts\SynchronizationAttribute.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\AggregateDictionary.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelObjectWithProperties.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelSinkWithProperties.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\BaseChannelWithProperties.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ClientChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\CrossAppDomainChannel.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ChannelDataStore.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ChannelServices.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ChannelSinkStackEntry.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientFormatterSink.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientFormatterSinkProvider.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSink.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSinkProvider.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IClientResponseChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannel.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannelDataStore.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannelReceiver.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannelReceiverHook.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannelSender.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IChannelSinkBase.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ISecurableChannel.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IServerFormatterSinkProvider.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSink.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSinkProvider.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IServerChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\IServerResponseChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ITransportHeaders.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ServerDispatchSink.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ServerDispatchSinkProvider.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ServerChannelSinkStack.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\ServerProcessing.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\SinkProviderData.cs" />
+    <Compile Include="System.Runtime.Remoting.Channels\TransportHeaders.cs" />
     <Compile Include="System.Runtime.Remoting.Lifetime\ClientSponsor.cs" />
     <Compile Include="System.Runtime.Remoting.Lifetime\ILease.cs" />
     <Compile Include="System.Runtime.Remoting.Lifetime\ISponsor.cs" />
@@ -951,9 +973,9 @@
     <Compile Include="System.Runtime.Remoting\ActivatedServiceTypeEntry.cs" />
     <Compile Include="System.Runtime.Remoting\CustomErrorsModes.cs" />
     <Compile Include="System.Runtime.Remoting\EnvoyInfo.cs" />
-    <Compile Include="System.Runtime.Remoting\IChannelInfo.cs" />
     <Compile Include="System.Runtime.Remoting\Identity.cs" />
     <Compile Include="System.Runtime.Remoting\IEnvoyInfo.cs" />
+    <Compile Include="System.Runtime.Remoting\IChannelInfo.cs" />
     <Compile Include="System.Runtime.Remoting\InternalRemotingServices.cs" />
     <Compile Include="System.Runtime.Remoting\IObjectHandle.cs" />
     <Compile Include="System.Runtime.Remoting\IRemotingTypeInfo.cs" />
@@ -1036,6 +1058,7 @@
     <Compile Include="System.Runtime.Versioning\TargetFrameworkAttribute.cs" />
     <Compile Include="System.Runtime.Versioning\VersioningHelper.cs" />
     <Compile Include="System.Runtime\AssemblyTargetedPatchBandAttribute.cs" />
+    <Compile Include="System.Runtime\GCLargeObjectHeapCompactionMode.cs" />
     <Compile Include="System.Runtime\GCLatencyMode.cs" />
     <Compile Include="System.Runtime\GCSettings.cs" />
     <Compile Include="System.Runtime\MemoryFailPoint.cs" />
@@ -1508,8 +1531,6 @@
     <Compile Include="System\Buffer.cs" />
     <Compile Include="System\Byte.cs" />
     <Compile Include="System\CannotUnloadAppDomainException.cs" />
-    <Compile Include="System\Char.cs" />
-    <Compile Include="System\CharEnumerator.cs" />
     <Compile Include="System\CLSCompliantAttribute.cs" />
     <Compile Include="System\Comparison.cs" />
     <Compile Include="System\Console.cs" />
@@ -1563,6 +1584,8 @@
     <Compile Include="System\GCCollectionMode.cs" />
     <Compile Include="System\GCNotificationStatus.cs" />
     <Compile Include="System\Guid.cs" />
+    <Compile Include="System\Char.cs" />
+    <Compile Include="System\CharEnumerator.cs" />
     <Compile Include="System\IAppDomainSetup.cs" />
     <Compile Include="System\IAsyncResult.cs" />
     <Compile Include="System\ICloneable.cs" />

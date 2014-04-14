@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{039AD56A-E91B-4803-8328-287F70B61D14}</ProjectGuid>
+    <ProjectGuid>{0CFEFA41-42F3-4261-8946-2534175CA4F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\ICSharpCode.SharpZipLib-net_4_5</OutputPath>
@@ -50,10 +50,6 @@
     <Compile Include="ICSharpCode.SharpZipLib\BZip2\BZip2Exception.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\BZip2\BZip2InputStream.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\BZip2\BZip2OutputStream.cs" />
-    <Compile Include="ICSharpCode.SharpZipLib\Checksums\Adler32.cs" />
-    <Compile Include="ICSharpCode.SharpZipLib\Checksums\CRC32.cs" />
-    <Compile Include="ICSharpCode.SharpZipLib\Checksums\IChecksum.cs" />
-    <Compile Include="ICSharpCode.SharpZipLib\Checksums\StrangeCRC.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\Core\FileSystemScanner.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\Core\INameTransform.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\Core\NameFilter.cs" />
@@ -63,6 +59,10 @@
     <Compile Include="ICSharpCode.SharpZipLib\GZip\GZipException.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\GZip\GzipInputStream.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\GZip\GzipOutputStream.cs" />
+    <Compile Include="ICSharpCode.SharpZipLib\Checksums\Adler32.cs" />
+    <Compile Include="ICSharpCode.SharpZipLib\Checksums\CRC32.cs" />
+    <Compile Include="ICSharpCode.SharpZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="ICSharpCode.SharpZipLib\Checksums\StrangeCRC.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\Main.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\SharpZipBaseException.cs" />
     <Compile Include="ICSharpCode.SharpZipLib\Tar\InvalidHeaderException.cs" />
@@ -111,16 +111,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

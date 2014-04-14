@@ -813,7 +813,7 @@ class MsbuildGenerator {
 		//
 		result.projectGuid = "{" + Guid.NewGuid ().ToString ().ToUpper () + "}";
 		result.library_output = library_output;
-		result.fx_version = double.Parse (fx_version);
+		result.fx_version = double.Parse (fx_version, CultureInfo.InvariantCulture);
 		result.output = template.
 			Replace ("@PROJECTGUID@", result.projectGuid).
 			Replace ("@DEFINES@", defines.ToString ()).

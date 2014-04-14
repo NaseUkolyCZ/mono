@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3DD52713-DB38-4D0D-8692-650B8821B047}</ProjectGuid>
+    <ProjectGuid>{43100EF3-A0C6-4BBC-9262-0B5460ADA370}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Microsoft.Build.Tasks-net_2_0</OutputPath>
@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
+    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs" />
     <Compile Include="..\Microsoft.Build.Engine\Microsoft.Build.BuildEngine\DirectoryScanner.cs" />
     <Compile Include="..\Microsoft.Build.Engine\Microsoft.Build.BuildEngine\UnknownToolsVersionException.cs" />
     <Compile Include="..\Microsoft.Build.Utilities\Mono.XBuild.Utilities\MSBuildUtils.cs" />
@@ -177,40 +178,36 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
-      <Project>{B91370A1-A33A-4F7A-BDF2-1E194AFA0869}</Project>
-      <Name>System.Core\System.Core-net_2_0</Name>
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_2_0.csproj">
-      <Project>{19413C30-6E39-4AAC-B9D1-FC88082E74C8}</Project>
-      <Name>Managed.Windows.Forms\System.Windows.Forms-net_2_0</Name>
+      <Project>{57D77C75-B43F-4D8D-A746-90726BC2C9E2}</Project>
+      <Name>System.Windows.Forms-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Build.Utilities\Microsoft.Build.Utilities-net_2_0.csproj">
-      <Project>{4AC4EDEE-4895-4CF9-84DF-9419E6980F38}</Project>
-      <Name>Microsoft.Build.Utilities\Microsoft.Build.Utilities-net_2_0</Name>
+      <Project>{34B919BF-C6F8-4988-B56D-40AD9ECAC87B}</Project>
+      <Name>Microsoft.Build.Utilities-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Build.Framework\Microsoft.Build.Framework-net_2_0.csproj">
-      <Project>{AB5EDD8C-84A4-4F96-80EE-1B6F3A86785B}</Project>
-      <Name>Microsoft.Build.Framework\Microsoft.Build.Framework-net_2_0</Name>
+      <Project>{7E1A1A0F-DA1F-4FF5-BFAE-F76E85199421}</Project>
+      <Name>Microsoft.Build.Framework-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Build.Engine\Microsoft.Build.Engine-net_2_0.csproj">
-      <Project>{E8E948B8-6DCF-48F2-A6BC-04309AED8740}</Project>
-      <Name>Microsoft.Build.Engine\Microsoft.Build.Engine-net_2_0</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mono.XBuild.Tasks\Mono.XBuild.Tasks-net_2_0.csproj">
-      <Project>{F5F84165-0541-4828-A81E-0AA1836E50C1}</Project>
-      <Name>Mono.XBuild.Tasks-net_2_0</Name>
+      <Project>{7842A747-8E03-48DE-B5E7-CEA9AAF05944}</Project>
+      <Name>Microsoft.Build.Engine-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

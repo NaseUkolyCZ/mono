@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FF5993DD-A243-4512-97FE-EB3613EF2860}</ProjectGuid>
+    <ProjectGuid>{BE6129B0-09BE-4CC0-9877-137CB0142D76}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Design-net_2_0</OutputPath>
@@ -136,10 +136,10 @@
     <Compile Include="System.ComponentModel.Design\LoadedEventArgs.cs" />
     <Compile Include="System.ComponentModel.Design\LoadedEventHandler.cs" />
     <Compile Include="System.ComponentModel.Design\LocalizationExtenderProvider.cs" />
+    <Compile Include="System.ComponentModel.Design\MenuCommandService.cs" />
     <Compile Include="System.ComponentModel.Design\MenuCommandsChangedEventArgs.cs" />
     <Compile Include="System.ComponentModel.Design\MenuCommandsChangedEventHandler.cs" />
     <Compile Include="System.ComponentModel.Design\MenuCommandsChangedType.cs" />
-    <Compile Include="System.ComponentModel.Design\MenuCommandService.cs" />
     <Compile Include="System.ComponentModel.Design\MultilineStringEditor.cs" />
     <Compile Include="System.ComponentModel.Design\ObjectSelectorEditor.cs" />
     <Compile Include="System.ComponentModel.Design\ReferenceService.cs" />
@@ -169,7 +169,6 @@
     <Compile Include="System.Web.UI.Design.WebControls\ButtonDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\CalendarAutoFormatDialog.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\CalendarDesigner.cs" />
-    <Compile Include="System.Web.UI.Design.WebControls\CheckBoxDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\CompositeControlDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\DataBoundControlDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\DataListComponentEditor.cs" />
@@ -177,6 +176,7 @@
     <Compile Include="System.Web.UI.Design.WebControls\DataSourceIDConverter.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\HierarchicalDataBoundControlDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\HyperLinkDesigner.cs" />
+    <Compile Include="System.Web.UI.Design.WebControls\CheckBoxDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\LabelDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\LinkButtonDesigner.cs" />
     <Compile Include="System.Web.UI.Design.WebControls\ListControlDataBindingHandler.cs" />
@@ -387,40 +387,41 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_2_0-1.csproj">
-      <Project>{3BAE9384-0A9D-4505-ABED-6D41949763D3}</Project>
-      <Name>System.Web\System.Web-net_2_0-1</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\Managed.Windows.Forms\System.Windows.Forms-net_2_0.csproj">
-      <Project>{19413C30-6E39-4AAC-B9D1-FC88082E74C8}</Project>
-      <Name>Managed.Windows.Forms\System.Windows.Forms-net_2_0</Name>
+      <Project>{57D77C75-B43F-4D8D-A746-90726BC2C9E2}</Project>
+      <Name>System.Windows.Forms-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Drawing\System.Drawing-net_2_0.csproj">
-      <Project>{CA7E5301-90D2-4C07-87B7-851AA216D4C9}</Project>
-      <Name>System.Drawing\System.Drawing-net_2_0</Name>
+      <Project>{AA43BEFC-33A6-4C4C-9C42-27E34EA95E8A}</Project>
+      <Name>System.Drawing-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Accessibility\Accessibility-net_2_0.csproj">
-      <Project>{6088F0A1-9658-4B71-86DB-8685B9279154}</Project>
-      <Name>Accessibility\Accessibility-net_2_0</Name>
+      <Project>{E4951517-D8DD-4DA5-ABFB-39EB6047A572}</Project>
+      <Name>Accessibility-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_2_0.csproj">
-      <Project>{49220562-83E1-49A2-971F-5D31C4AB0258}</Project>
-      <Name>System.Data\System.Data-net_2_0</Name>
+      <Project>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</Project>
+      <Name>System.Data-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_2_0.csproj">
-      <Project>{8131BE5D-BE64-4BA5-A62D-FAC4BE0A0B53}</Project>
-      <Name>System.Configuration\System.Configuration-net_2_0</Name>
+      <Project>{AC901491-8842-4ABC-A64C-23B2C7957A27}</Project>
+      <Name>System.Configuration-net_2_0</Name>
     </ProjectReference>
     <Reference Include="System.Drawing.Design.dll">
       <SpecificVersion>False</SpecificVersion>

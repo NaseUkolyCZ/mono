@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9E5FB1DD-0691-445E-8048-C90981B6948D}</ProjectGuid>
+    <ProjectGuid>{C93519F7-DCC6-46C3-897F-76F1C4499F36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Web.Http-net_4_5</OutputPath>
@@ -325,44 +325,44 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
-      <Project>{D8260595-C32F-4AC3-9C01-2CD2528CFA1D}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Net.Http\System.Net.Http-net_4_5.csproj">
-      <Project>{BE71D058-35CB-4623-AA66-631C7EB5F139}</Project>
-      <Name>System.Net.Http\System.Net.Http-net_4_5</Name>
+      <Project>{0AB26B4C-C081-4CC7-98D9-1C4A07559720}</Project>
+      <Name>System.Net.Http-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_4_5.csproj">
-      <Project>{64E625C0-AA4E-44DC-98F4-352D552F2EF8}</Project>
-      <Name>System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_4_5</Name>
+    <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_2_0.csproj">
+      <Project>{62790D45-D3F3-4C8B-8A98-2A5DE0CB142A}</Project>
+      <Name>System.ComponentModel.DataAnnotations-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Net.Http.Formatting\System.Net.Http.Formatting-net_4_5.csproj">
-      <Project>{9BDDA23D-1ABF-477A-AAA6-CD489033208E}</Project>
-      <Name>System.Net.Http.Formatting\System.Net.Http.Formatting-net_4_5</Name>
+      <Project>{9A6C5328-6E1F-461A-8DE9-E314C90D9D0F}</Project>
+      <Name>System.Net.Http.Formatting-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Caching\System.Runtime.Caching-net_4_5.csproj">
-      <Project>{C18ABE89-33D2-4780-93BE-AB89B8187581}</Project>
-      <Name>System.Runtime.Caching\System.Runtime.Caching-net_4_5</Name>
+      <Project>{AE639B83-1CDE-4DC7-8328-A22CA176810E}</Project>
+      <Name>System.Runtime.Caching-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_5.csproj">
-      <Project>{E90544E8-C031-49EE-BB6F-8688382E8618}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_5</Name>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data.Linq\System.Data.Linq-net_4_5.csproj">
-      <Project>{D5F1C909-8875-4D37-8CC1-30851258C594}</Project>
-      <Name>System.Data.Linq\System.Data.Linq-net_4_5</Name>
+      <Project>{244452E1-9F12-4341-A3E5-9FCA41866BE5}</Project>
+      <Name>System.Data.Linq-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

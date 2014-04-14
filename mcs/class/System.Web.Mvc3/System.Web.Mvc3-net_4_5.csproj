@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3DB9B990-AE64-4B64-8A75-3797970AF64A}</ProjectGuid>
+    <ProjectGuid>{CA538FAB-D670-4816-AE1C-D946D1D2FB6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Web.Mvc3-net_4_5</OutputPath>
@@ -104,9 +104,6 @@
     <Compile Include=".\Mvc\BuildManagerViewEngine.cs" />
     <Compile Include=".\Mvc\BuildManagerWrapper.cs" />
     <Compile Include=".\Mvc\ByteArrayModelBinder.cs" />
-    <Compile Include=".\Mvc\ChildActionOnlyAttribute.cs" />
-    <Compile Include=".\Mvc\ChildActionValueProvider.cs" />
-    <Compile Include=".\Mvc\ChildActionValueProviderFactory.cs" />
     <Compile Include=".\Mvc\ClientDataTypeModelValidatorProvider.cs" />
     <Compile Include=".\Mvc\CompareAttribute.cs" />
     <Compile Include=".\Mvc\ContentResult.cs" />
@@ -182,13 +179,13 @@
     <Compile Include=".\Mvc\HandleErrorAttribute.cs" />
     <Compile Include=".\Mvc\HandleErrorInfo.cs" />
     <Compile Include=".\Mvc\HiddenInputAttribute.cs" />
-    <Compile Include=".\Mvc\Html\ChildActionExtensions.cs" />
     <Compile Include=".\Mvc\Html\DefaultDisplayTemplates.cs" />
     <Compile Include=".\Mvc\Html\DefaultEditorTemplates.cs" />
     <Compile Include=".\Mvc\Html\DisplayExtensions.cs" />
     <Compile Include=".\Mvc\Html\DisplayTextExtensions.cs" />
     <Compile Include=".\Mvc\Html\EditorExtensions.cs" />
     <Compile Include=".\Mvc\Html\FormExtensions.cs" />
+    <Compile Include=".\Mvc\Html\ChildActionExtensions.cs" />
     <Compile Include=".\Mvc\Html\InputExtensions.cs" />
     <Compile Include=".\Mvc\Html\LabelExtensions.cs" />
     <Compile Include=".\Mvc\Html\LinkExtensions.cs" />
@@ -214,6 +211,9 @@
     <Compile Include=".\Mvc\HttpStatusCodeResult.cs" />
     <Compile Include=".\Mvc\HttpUnauthorizedResult.cs" />
     <Compile Include=".\Mvc\HttpVerbs.cs" />
+    <Compile Include=".\Mvc\ChildActionOnlyAttribute.cs" />
+    <Compile Include=".\Mvc\ChildActionValueProvider.cs" />
+    <Compile Include=".\Mvc\ChildActionValueProviderFactory.cs" />
     <Compile Include=".\Mvc\IActionFilter.cs" />
     <Compile Include=".\Mvc\IActionInvoker.cs" />
     <Compile Include=".\Mvc\IAuthorizationFilter.cs" />
@@ -402,72 +402,73 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Web.Infrastructure\Microsoft.Web.Infrastructure-net_4_5.csproj">
-      <Project>{4EEAD998-2E72-4435-9BC3-9A3C1DDC59A7}</Project>
-      <Name>Microsoft.Web.Infrastructure\Microsoft.Web.Infrastructure-net_4_5</Name>
+      <Project>{876CF900-9780-4F05-9B4E-7F5ED3B1764D}</Project>
+      <Name>Microsoft.Web.Infrastructure-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
-      <Project>{D8260595-C32F-4AC3-9C01-2CD2528CFA1D}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
-      <Project>{CA2CD67B-1308-460D-BDBA-498F63DEAA31}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_5</Name>
+      <Project>{80C88BDD-6B93-4D91-9CD6-A9F62785E3E0}</Project>
+      <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_4_5.csproj">
-      <Project>{663D8C81-B74E-4D44-8C59-2264C6942B30}</Project>
-      <Name>System.Data\System.Data-net_4_5</Name>
+      <Project>{4BC86D63-E324-4EED-933D-25D6B23CD7FF}</Project>
+      <Name>System.Data-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_4_5-2.csproj">
-      <Project>{93406A57-422B-4A7E-886A-B37F2E97DB78}</Project>
-      <Name>System.Web\System.Web-net_4_5-2</Name>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\System.Web.Abstractions\System.Web.Abstractions-net_2_0.csproj">
+      <Project>{948778AA-7A43-406A-BD9E-4360519010FF}</Project>
+      <Name>System.Web.Abstractions-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web.Abstractions\System.Web.Abstractions-net_4_5.csproj">
-      <Project>{C035D4D2-D112-49A6-87B8-E47469BBDA4F}</Project>
-      <Name>System.Web.Abstractions\System.Web.Abstractions-net_4_5</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Web.Routing\System.Web.Routing-net_4_5.csproj">
-      <Project>{83FDEDF8-E46D-437E-8CEF-DD2C36E05324}</Project>
-      <Name>System.Web.Routing\System.Web.Routing-net_4_5</Name>
+    <ProjectReference Include="..\System.Web.Routing\System.Web.Routing-net_2_0.csproj">
+      <Project>{642AE973-4545-486F-9E61-33D9FD43AAB9}</Project>
+      <Name>System.Web.Routing-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.Extensions\System.Web.Extensions-net_4_5.csproj">
-      <Project>{74E571CD-0506-4A52-B780-FDA9445675FB}</Project>
-      <Name>System.Web.Extensions\System.Web.Extensions-net_4_5</Name>
+      <Project>{AF75EB7C-0D96-4208-B036-01455BF192C7}</Project>
+      <Name>System.Web.Extensions-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_4_5.csproj">
-      <Project>{64E625C0-AA4E-44DC-98F4-352D552F2EF8}</Project>
-      <Name>System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_4_5</Name>
+    <ProjectReference Include="..\System.ComponentModel.DataAnnotations\System.ComponentModel.DataAnnotations-net_2_0.csproj">
+      <Project>{62790D45-D3F3-4C8B-8A98-2A5DE0CB142A}</Project>
+      <Name>System.ComponentModel.DataAnnotations-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data.Linq\System.Data.Linq-net_4_5.csproj">
-      <Project>{D5F1C909-8875-4D37-8CC1-30851258C594}</Project>
-      <Name>System.Data.Linq\System.Data.Linq-net_4_5</Name>
+      <Project>{244452E1-9F12-4341-A3E5-9FCA41866BE5}</Project>
+      <Name>System.Data.Linq-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Caching\System.Runtime.Caching-net_4_5.csproj">
-      <Project>{C18ABE89-33D2-4780-93BE-AB89B8187581}</Project>
-      <Name>System.Runtime.Caching\System.Runtime.Caching-net_4_5</Name>
+      <Project>{AE639B83-1CDE-4DC7-8328-A22CA176810E}</Project>
+      <Name>System.Runtime.Caching-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.Razor\System.Web.Razor-net_4_5.csproj">
-      <Project>{030FB9AF-B3A5-4FCB-B59C-E1C90675CD42}</Project>
-      <Name>System.Web.Razor\System.Web.Razor-net_4_5</Name>
+      <Project>{F7C7DAA5-2FD3-4895-A3F6-2049E211E744}</Project>
+      <Name>System.Web.Razor-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.WebPages.Razor\System.Web.WebPages.Razor-net_4_5.csproj">
-      <Project>{7A8432CA-9024-4496-A751-18AEFC8932E7}</Project>
-      <Name>System.Web.WebPages.Razor\System.Web.WebPages.Razor-net_4_5</Name>
+      <Project>{E6E3FA8E-1A34-42C4-97D5-AD7D00B6A781}</Project>
+      <Name>System.Web.WebPages.Razor-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Web.WebPages\System.Web.WebPages-net_4_5.csproj">
-      <Project>{E9421151-F425-415F-8D32-5F28974E3C72}</Project>
-      <Name>System.Web.WebPages\System.Web.WebPages-net_4_5</Name>
+      <Project>{56714331-AC83-4C4E-82B8-9661A3161101}</Project>
+      <Name>System.Web.WebPages-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

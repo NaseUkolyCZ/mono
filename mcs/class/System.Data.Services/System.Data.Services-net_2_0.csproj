@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{99FD3D71-E25F-4F03-8C59-767F8CBF1FD0}</ProjectGuid>
+    <ProjectGuid>{8AF0F1C5-33E5-408B-BA14-D5C8222A644A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Data.Services-net_2_0</OutputPath>
@@ -48,7 +48,6 @@
     <Compile Include="..\..\build\common\Locale.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
     <Compile Include=".\Assembly\AssemblyInfo.cs" />
-    <Compile Include=".\System.Data.Services\ChangeInterceptorAttribute.cs" />
     <Compile Include=".\System.Data.Services\DataService.cs" />
     <Compile Include=".\System.Data.Services\DataServiceException.cs" />
     <Compile Include=".\System.Data.Services\DataServiceHost.cs" />
@@ -58,6 +57,7 @@
     <Compile Include=".\System.Data.Services\ExpandSegment.cs" />
     <Compile Include=".\System.Data.Services\ExpandSegmentCollection.cs" />
     <Compile Include=".\System.Data.Services\HandleExceptionArgs.cs" />
+    <Compile Include=".\System.Data.Services\ChangeInterceptorAttribute.cs" />
     <Compile Include=".\System.Data.Services\IDataServiceConfiguration.cs" />
     <Compile Include=".\System.Data.Services\IDataServiceHost.cs" />
     <Compile Include=".\System.Data.Services\IExpandedResult.cs" />
@@ -88,29 +88,31 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
-      <Project>{B91370A1-A33A-4F7A-BDF2-1E194AFA0869}</Project>
-      <Name>System.Core\System.Core-net_2_0</Name>
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_2_0.csproj">
-      <Project>{28B2271C-CC55-4812-B732-A67317405AA9}</Project>
-      <Name>System.ServiceModel\System.ServiceModel-net_2_0</Name>
+      <Project>{07DAB1EF-2FED-45A6-8627-12B94642C0DA}</Project>
+      <Name>System.ServiceModel-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ServiceModel.Web\System.ServiceModel.Web-net_2_0.csproj">
-      <Project>{C1E98610-9EA1-4973-A48B-E7CE2E790F40}</Project>
-      <Name>System.ServiceModel.Web\System.ServiceModel.Web-net_2_0</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Data.Services.Client\System.Data.Services.Client-net_2_0.csproj">
-      <Project>{28041CBC-632D-4961-B316-C2A15CFD9488}</Project>
-      <Name>System.Data.Services.Client\System.Data.Services.Client-net_2_0</Name>
-    </ProjectReference>
+    <Reference Include="System.ServiceModel.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.ServiceModel.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Services.Client.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Data.Services.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

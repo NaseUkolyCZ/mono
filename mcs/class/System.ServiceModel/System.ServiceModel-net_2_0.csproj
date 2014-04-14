@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{28B2271C-CC55-4812-B732-A67317405AA9}</ProjectGuid>
+    <ProjectGuid>{07DAB1EF-2FED-45A6-8627-12B94642C0DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,414,169,67,3005,436,219,618</NoWarn>
     <OutputPath>bin\Debug\System.ServiceModel-net_2_0</OutputPath>
@@ -176,196 +176,9 @@
     <Compile Include="System.Collections.Generic\SynchronizedReadOnlyCollection.cs" />
     <Compile Include="System.IO\PipeException.cs" />
     <Compile Include="System.ServiceModel.Activation\AspNetIntegrationRequirementsAttribute.cs" />
-    <Compile Include="System.ServiceModel.Activation\IServiceHostFactory.cs" />
     <Compile Include="System.ServiceModel.Activation\ServiceHostFactory.cs" />
     <Compile Include="System.ServiceModel.Activation\ServiceHostFactoryBase.cs" />
     <Compile Include="System.ServiceModel.Activation\VirtualPathExtension.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpChannelListenerEntry.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpContextInfo.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpListenerManager.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpListenerManagerTable.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Http\HttpRequestContext.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\PeerDuplexChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpBinaryFrameManager.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpDuplexSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\MessageSecurityBindingSupport.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecureMessageDecryptor.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecureMessageGenerator.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityCapabilities.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityDuplexSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityOutputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SecurityRequestContext.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\SupportingTokenInfo.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\WSEncryptedXml.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\WSSecurityMessageHeader.cs" />
-    <Compile Include="System.ServiceModel.Channels.Security\WSSignedXml.cs" />
-    <Compile Include="System.ServiceModel.Channels\AddressHeader.cs" />
-    <Compile Include="System.ServiceModel.Channels\AddressHeaderCollection.cs" />
-    <Compile Include="System.ServiceModel.Channels\AddressingVersion.cs" />
-    <Compile Include="System.ServiceModel.Channels\AsymmetricSecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncoder.cs" />
-    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncoderFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncodingBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\Binding.cs" />
-    <Compile Include="System.ServiceModel.Channels\BindingContext.cs" />
-    <Compile Include="System.ServiceModel.Channels\BindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\BindingElementCollection.cs" />
-    <Compile Include="System.ServiceModel.Channels\BindingParameterCollection.cs" />
-    <Compile Include="System.ServiceModel.Channels\BodyWriter.cs" />
-    <Compile Include="System.ServiceModel.Channels\BufferManager.cs" />
-    <Compile Include="System.ServiceModel.Channels\CachingCompiler.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelFactoryBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelListenerBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelListenerBase_1.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelManagerBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelParameterCollection.cs" />
-    <Compile Include="System.ServiceModel.Channels\ChannelPoolSettings.cs" />
-    <Compile Include="System.ServiceModel.Channels\CommunicationObject.cs" />
-    <Compile Include="System.ServiceModel.Channels\CompilationException.cs" />
-    <Compile Include="System.ServiceModel.Channels\CompositeDuplexBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\CompositeDuplexBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\ConnectionOrientedTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\ContentType.cs" />
-    <Compile Include="System.ServiceModel.Channels\CustomBinding.cs" />
-    <Compile Include="System.ServiceModel.Channels\DeliveryFailure.cs" />
-    <Compile Include="System.ServiceModel.Channels\DeliveryStatus.cs" />
-    <Compile Include="System.ServiceModel.Channels\DuplexChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\DuplexSessionBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\FaultConverter.cs" />
-    <Compile Include="System.ServiceModel.Channels\HostedTransportConfiguration.cs" />
-    <Compile Include="System.ServiceModel.Channels\HtmlizedException.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpRequestMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpResponseMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpsTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\HttpTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\IBindingDeliveryCapabilities.cs" />
-    <Compile Include="System.ServiceModel.Channels\IBindingMulticastCapabilities.cs" />
-    <Compile Include="System.ServiceModel.Channels\IBindingRuntimePreferences.cs" />
-    <Compile Include="System.ServiceModel.Channels\IChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\IChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels\IDuplexChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IDuplexSession.cs" />
-    <Compile Include="System.ServiceModel.Channels\IDuplexSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IInputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IInputSession.cs" />
-    <Compile Include="System.ServiceModel.Channels\IInputSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\InputChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\InvalidChannelBindingException.cs" />
-    <Compile Include="System.ServiceModel.Channels\IOutputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IOutputSession.cs" />
-    <Compile Include="System.ServiceModel.Channels\IOutputSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IReplySessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\IRequestSessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\ISecurityCapabilities.cs" />
-    <Compile Include="System.ServiceModel.Channels\ISession.cs" />
-    <Compile Include="System.ServiceModel.Channels\ISessionChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\ITransactedBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\ITransportTokenAssertionProvider.cs" />
-    <Compile Include="System.ServiceModel.Channels\LayeredCommunicationObject.cs" />
-    <Compile Include="System.ServiceModel.Channels\LayeredOutputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\LayeredReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\LayeredRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\LocalClientSecuritySettings.cs" />
-    <Compile Include="System.ServiceModel.Channels\Message.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageBuffer.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageBufferImpl.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageEncoder.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageEncoderFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageEncodingBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageEncodingBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageFault.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageFaultBodyWriter.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageHeader.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageHeaderInfo.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageHeaders.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageImpl.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageProperties.cs" />
-    <Compile Include="System.ServiceModel.Channels\MessageVersion.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqBindingElementBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqInputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqOutputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\MsmqTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\MtomMessageEncoder.cs" />
-    <Compile Include="System.ServiceModel.Channels\MtomMessageEncoderFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\MtomMessageEncodingBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipeChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipeChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipeConnectionPoolSettings.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipeReplyChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipeRequestChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\NamedPipetransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\OneWayBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\OneWayBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\OutputChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerChannelFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerCustomResolverBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerInputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerOutputChannel.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerResolverBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\PeerTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\PnrpPeerResolverBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\PolicyImportHelper.cs" />
-    <Compile Include="System.ServiceModel.Channels\PrivacyNoticeBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\ReliableSessionBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\ReliableSessionBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\RemoteEndpointMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\ReplyChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\RequestChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\RequestContext.cs" />
-    <Compile Include="System.ServiceModel.Channels\SecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\SecurityBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\ServiceHostParser.cs" />
-    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityUpgradeAcceptor.cs" />
-    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityUpgradeProvider.cs" />
-    <Compile Include="System.ServiceModel.Channels\StandardBindingImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeAcceptor.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeInitiator.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeProvider.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamUpgradeAcceptor.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamUpgradeBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamUpgradeInitiator.cs" />
-    <Compile Include="System.ServiceModel.Channels\StreamUpgradeProvider.cs" />
-    <Compile Include="System.ServiceModel.Channels\SvcHttpHandler.cs" />
-    <Compile Include="System.ServiceModel.Channels\SvcHttpHandlerFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\SymmetricSecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\TcpConnectionPoolSettings.cs" />
-    <Compile Include="System.ServiceModel.Channels\TcpTransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\TextMessageEncoder.cs" />
-    <Compile Include="System.ServiceModel.Channels\TextMessageEncoderFactory.cs" />
-    <Compile Include="System.ServiceModel.Channels\TextMessageEncodingBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransactionFlowBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransactionFlowBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransactionMessageProperty.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransportBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransportBindingElementImporter.cs" />
-    <Compile Include="System.ServiceModel.Channels\TransportSecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\UnderstoodHeaders.cs" />
-    <Compile Include="System.ServiceModel.Channels\UseManagedPresentationBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\WindowsStreamSecurityBindingElement.cs" />
-    <Compile Include="System.ServiceModel.Channels\XmlObjectSerializerBodyWriter.cs" />
-    <Compile Include="System.ServiceModel.Channels\XmlReaderBodyWriter.cs" />
     <Compile Include="System.ServiceModel.ComIntegration\Dummy.cs" />
     <Compile Include="System.ServiceModel.Configuration\AddressHeaderCollectionElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\AllowedAudienceUriElement.cs" />
@@ -391,9 +204,6 @@
     <Compile Include="System.ServiceModel.Configuration\CallbackTimeoutsElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\CertificateElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\CertificateReferenceElement.cs" />
-    <Compile Include="System.ServiceModel.Configuration\ChannelEndpointElement.cs" />
-    <Compile Include="System.ServiceModel.Configuration\ChannelEndpointElementCollection.cs" />
-    <Compile Include="System.ServiceModel.Configuration\ChannelPoolSettingsElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\ClaimTypeElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\ClaimTypeElementCollection.cs" />
     <Compile Include="System.ServiceModel.Configuration\ClientCredentialsElement.cs" />
@@ -436,6 +246,9 @@
     <Compile Include="System.ServiceModel.Configuration\HttpsTransportElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\HttpTransportElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\HttpTransportSecurityElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\ChannelEndpointElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\ChannelEndpointElementCollection.cs" />
+    <Compile Include="System.ServiceModel.Configuration\ChannelPoolSettingsElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\IBindingConfigurationElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\IdentityElement.cs" />
     <Compile Include="System.ServiceModel.Configuration\IPAddressConverter.cs" />
@@ -685,9 +498,6 @@
     <Compile Include="System.ServiceModel.Dispatcher\BaseRequestProcessor.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\BaseRequestProcessorHandler.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\CallbackInstanceContextProvider.cs" />
-    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcher.cs" />
-    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcherBase.cs" />
-    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcherCollection.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\ClientOperation.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\ClientRuntime.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\DataContractSerializerServiceBehavior.cs" />
@@ -703,9 +513,10 @@
     <Compile Include="System.ServiceModel.Dispatcher\FaultContractInfo.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\FilterInvalidBodyAccessException.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\FinalizeProcessingHandler.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcher.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcherBase.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\ChannelDispatcherCollection.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\ICallContextInitializer.cs" />
-    <Compile Include="System.ServiceModel.Dispatcher\IChannelDispatcherBoundListener.cs" />
-    <Compile Include="System.ServiceModel.Dispatcher\IChannelInitializer.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IClientMessageFormatter.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IClientMessageInspector.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IClientOperationSelector.cs" />
@@ -713,6 +524,8 @@
     <Compile Include="System.ServiceModel.Dispatcher\IDispatchMessageInspector.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IDispatchOperationSelector.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IErrorHandler.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\IChannelDispatcherBoundListener.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\IChannelInitializer.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IInputSessionShutdown.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IInstanceContextInitializer.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\IInstanceContextProvider.cs" />
@@ -748,6 +561,192 @@
     <Compile Include="System.ServiceModel.Dispatcher\XPathMessageFilter.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\XPathMessageFilterTable.cs" />
     <Compile Include="System.ServiceModel.Dispatcher\XPathNavigatorException.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpContextInfo.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpChannelListenerEntry.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpListenerManager.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpListenerManagerTable.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Http\HttpRequestContext.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\PeerDuplexChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpBinaryFrameManager.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpDuplexSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.NetTcp\TcpRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\MessageSecurityBindingSupport.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecureMessageDecryptor.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecureMessageGenerator.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityCapabilities.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityDuplexSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityOutputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityRequestContext.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SecurityRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\SupportingTokenInfo.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\WSEncryptedXml.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\WSSecurityMessageHeader.cs" />
+    <Compile Include="System.ServiceModel.Channels.Security\WSSignedXml.cs" />
+    <Compile Include="System.ServiceModel.Channels\AddressHeader.cs" />
+    <Compile Include="System.ServiceModel.Channels\AddressHeaderCollection.cs" />
+    <Compile Include="System.ServiceModel.Channels\AddressingVersion.cs" />
+    <Compile Include="System.ServiceModel.Channels\AsymmetricSecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncoder.cs" />
+    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncoderFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\BinaryMessageEncodingBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\Binding.cs" />
+    <Compile Include="System.ServiceModel.Channels\BindingContext.cs" />
+    <Compile Include="System.ServiceModel.Channels\BindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\BindingElementCollection.cs" />
+    <Compile Include="System.ServiceModel.Channels\BindingParameterCollection.cs" />
+    <Compile Include="System.ServiceModel.Channels\BodyWriter.cs" />
+    <Compile Include="System.ServiceModel.Channels\BufferManager.cs" />
+    <Compile Include="System.ServiceModel.Channels\CachingCompiler.cs" />
+    <Compile Include="System.ServiceModel.Channels\CommunicationObject.cs" />
+    <Compile Include="System.ServiceModel.Channels\CompilationException.cs" />
+    <Compile Include="System.ServiceModel.Channels\CompositeDuplexBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\CompositeDuplexBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\ConnectionOrientedTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\ContentType.cs" />
+    <Compile Include="System.ServiceModel.Channels\CustomBinding.cs" />
+    <Compile Include="System.ServiceModel.Channels\DeliveryFailure.cs" />
+    <Compile Include="System.ServiceModel.Channels\DeliveryStatus.cs" />
+    <Compile Include="System.ServiceModel.Channels\DuplexChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\DuplexSessionBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\FaultConverter.cs" />
+    <Compile Include="System.ServiceModel.Channels\HostedTransportConfiguration.cs" />
+    <Compile Include="System.ServiceModel.Channels\HtmlizedException.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpRequestMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpResponseMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpsTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\HttpTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelFactoryBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelListenerBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelListenerBase_1.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelManagerBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelParameterCollection.cs" />
+    <Compile Include="System.ServiceModel.Channels\ChannelPoolSettings.cs" />
+    <Compile Include="System.ServiceModel.Channels\IBindingDeliveryCapabilities.cs" />
+    <Compile Include="System.ServiceModel.Channels\IBindingMulticastCapabilities.cs" />
+    <Compile Include="System.ServiceModel.Channels\IBindingRuntimePreferences.cs" />
+    <Compile Include="System.ServiceModel.Channels\IDuplexChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IDuplexSession.cs" />
+    <Compile Include="System.ServiceModel.Channels\IDuplexSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\IChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels\IInputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IInputSession.cs" />
+    <Compile Include="System.ServiceModel.Channels\IInputSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\InputChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\InvalidChannelBindingException.cs" />
+    <Compile Include="System.ServiceModel.Channels\IOutputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IOutputSession.cs" />
+    <Compile Include="System.ServiceModel.Channels\IOutputSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IReplySessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\IRequestSessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\ISecurityCapabilities.cs" />
+    <Compile Include="System.ServiceModel.Channels\ISession.cs" />
+    <Compile Include="System.ServiceModel.Channels\ISessionChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\ITransactedBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\ITransportTokenAssertionProvider.cs" />
+    <Compile Include="System.ServiceModel.Channels\LayeredCommunicationObject.cs" />
+    <Compile Include="System.ServiceModel.Channels\LayeredOutputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\LayeredReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\LayeredRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\LocalClientSecuritySettings.cs" />
+    <Compile Include="System.ServiceModel.Channels\Message.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageBuffer.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageBufferImpl.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageEncoder.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageEncoderFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageEncodingBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageEncodingBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageFault.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageFaultBodyWriter.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageHeader.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageHeaderInfo.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageHeaders.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageImpl.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageProperties.cs" />
+    <Compile Include="System.ServiceModel.Channels\MessageVersion.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqBindingElementBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqInputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqOutputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\MsmqTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\MtomMessageEncoder.cs" />
+    <Compile Include="System.ServiceModel.Channels\MtomMessageEncoderFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\MtomMessageEncodingBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipeConnectionPoolSettings.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipeChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipeChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipeReplyChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipeRequestChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\NamedPipetransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\OneWayBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\OneWayBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\OutputChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerCustomResolverBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerChannelListener.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerInputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerOutputChannel.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerResolverBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\PeerTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\PnrpPeerResolverBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\PolicyImportHelper.cs" />
+    <Compile Include="System.ServiceModel.Channels\PrivacyNoticeBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\ReliableSessionBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\ReliableSessionBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\RemoteEndpointMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\ReplyChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\RequestContext.cs" />
+    <Compile Include="System.ServiceModel.Channels\RequestChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\SecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\SecurityBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\ServiceHostParser.cs" />
+    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityUpgradeAcceptor.cs" />
+    <Compile Include="System.ServiceModel.Channels\SslStreamSecurityUpgradeProvider.cs" />
+    <Compile Include="System.ServiceModel.Channels\StandardBindingImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeAcceptor.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeInitiator.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamSecurityUpgradeProvider.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamUpgradeAcceptor.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamUpgradeBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamUpgradeInitiator.cs" />
+    <Compile Include="System.ServiceModel.Channels\StreamUpgradeProvider.cs" />
+    <Compile Include="System.ServiceModel.Channels\SvcHttpHandler.cs" />
+    <Compile Include="System.ServiceModel.Channels\SvcHttpHandlerFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\SymmetricSecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\TcpConnectionPoolSettings.cs" />
+    <Compile Include="System.ServiceModel.Channels\TcpTransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\TextMessageEncoder.cs" />
+    <Compile Include="System.ServiceModel.Channels\TextMessageEncoderFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\TextMessageEncodingBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransactionFlowBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransactionFlowBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransactionMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransportBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransportBindingElementImporter.cs" />
+    <Compile Include="System.ServiceModel.Channels\TransportSecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\UnderstoodHeaders.cs" />
+    <Compile Include="System.ServiceModel.Channels\UseManagedPresentationBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\WindowsStreamSecurityBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Channels\XmlObjectSerializerBodyWriter.cs" />
+    <Compile Include="System.ServiceModel.Channels\XmlReaderBodyWriter.cs" />
     <Compile Include="System.ServiceModel.MsmqIntegration\MsmqIntegrationBinding.cs" />
     <Compile Include="System.ServiceModel.MsmqIntegration\MsmqIntegrationBindingElement.cs" />
     <Compile Include="System.ServiceModel.MsmqIntegration\MsmqIntegrationMessageProperty.cs" />
@@ -818,10 +817,10 @@
     <Compile Include="System.ServiceModel.Security.Tokens\X509SecurityTokenParameters.cs" />
     <Compile Include="System.ServiceModel.Security\BasicSecurityProfileVersion.cs" />
     <Compile Include="System.ServiceModel.Security\BinarySecretKeyIdentifierClause.cs" />
-    <Compile Include="System.ServiceModel.Security\ChannelProtectionRequirements.cs" />
     <Compile Include="System.ServiceModel.Security\DataProtectionSecurityStateEncoder.cs" />
     <Compile Include="System.ServiceModel.Security\ExpiredSecurityTokenException.cs" />
     <Compile Include="System.ServiceModel.Security\HttpDigestClientCredential.cs" />
+    <Compile Include="System.ServiceModel.Security\ChannelProtectionRequirements.cs" />
     <Compile Include="System.ServiceModel.Security\IdentityVerifier.cs" />
     <Compile Include="System.ServiceModel.Security\IEndpointIdentityProvider.cs" />
     <Compile Include="System.ServiceModel.Security\InfocardInteractiveChannelInitializer.cs" />
@@ -874,9 +873,6 @@
     <Compile Include="System.ServiceModel\BasicHttpMessageSecurity.cs" />
     <Compile Include="System.ServiceModel\BasicHttpSecurity.cs" />
     <Compile Include="System.ServiceModel\CallbackBehaviorAttribute.cs" />
-    <Compile Include="System.ServiceModel\ChannelFactory.cs" />
-    <Compile Include="System.ServiceModel\ChannelFactory_1.cs" />
-    <Compile Include="System.ServiceModel\ChannelTerminatedException.cs" />
     <Compile Include="System.ServiceModel\ClientBase.cs" />
     <Compile Include="System.ServiceModel\ClientCredentialsSecurityTokenManager.cs" />
     <Compile Include="System.ServiceModel\ClientProxyGenerator.cs" />
@@ -891,9 +887,9 @@
     <Compile Include="System.ServiceModel\DeliveryRequirementsAttribute.cs" />
     <Compile Include="System.ServiceModel\DnsEndpointIdentity.cs" />
     <Compile Include="System.ServiceModel\Dummy.cs" />
-    <Compile Include="System.ServiceModel\DuplexChannelFactory.cs" />
     <Compile Include="System.ServiceModel\DuplexClientBase.cs" />
     <Compile Include="System.ServiceModel\DuplexClientRuntimeChannel.cs" />
+    <Compile Include="System.ServiceModel\DuplexChannelFactory.cs" />
     <Compile Include="System.ServiceModel\EndpointAddress.cs" />
     <Compile Include="System.ServiceModel\EndpointAddress10.cs" />
     <Compile Include="System.ServiceModel\EndpointAddressAugust2004.cs" />
@@ -911,6 +907,9 @@
     <Compile Include="System.ServiceModel\FaultReasonText.cs" />
     <Compile Include="System.ServiceModel\FederatedMessageSecurityOverHttp.cs" />
     <Compile Include="System.ServiceModel\HttpTransportSecurity.cs" />
+    <Compile Include="System.ServiceModel\ChannelFactory.cs" />
+    <Compile Include="System.ServiceModel\ChannelFactory_1.cs" />
+    <Compile Include="System.ServiceModel\ChannelTerminatedException.cs" />
     <Compile Include="System.ServiceModel\IClientChannel.cs" />
     <Compile Include="System.ServiceModel\ICommunicationObject.cs" />
     <Compile Include="System.ServiceModel\IContextChannel.cs" />
@@ -1017,64 +1016,65 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_2_0-1.csproj">
-      <Project>{D9776E38-7673-45F6-BF19-7B77830DF9CA}</Project>
-      <Name>System.XML\System.Xml-net_2_0-1</Name>
+      <Project>{44B4073A-6919-49F7-B00F-E26449E4FDB4}</Project>
+      <Name>System.Xml-net_2_0-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
-      <Project>{B91370A1-A33A-4F7A-BDF2-1E194AFA0869}</Project>
-      <Name>System.Core\System.Core-net_2_0</Name>
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
-      <Project>{FBE202BB-4389-49E8-A81F-155E92BF1B0B}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_2_0</Name>
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_2_0.csproj">
-      <Project>{8131BE5D-BE64-4BA5-A62D-FAC4BE0A0B53}</Project>
-      <Name>System.Configuration\System.Configuration-net_2_0</Name>
+      <Project>{AC901491-8842-4ABC-A64C-23B2C7957A27}</Project>
+      <Name>System.Configuration-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_2_0.csproj">
-      <Project>{49220562-83E1-49A2-971F-5D31C4AB0258}</Project>
-      <Name>System.Data\System.Data-net_2_0</Name>
+      <Project>{7FF4D67F-6F2E-4DA5-B25A-9194B7794134}</Project>
+      <Name>System.Data-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Security\System.Security-net_2_0.csproj">
-      <Project>{1A468E0B-8690-4595-BBD7-D9A5002DFF26}</Project>
-      <Name>System.Security\System.Security-net_2_0</Name>
+      <Project>{0F5B68D9-6E45-4C6B-94CE-26E5FD96BDC7}</Project>
+      <Name>System.Security-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.IdentityModel\System.IdentityModel-net_2_0.csproj">
-      <Project>{FB6EBCB1-9EAF-4671-A9CB-505DC2FEC8A0}</Project>
-      <Name>System.IdentityModel\System.IdentityModel-net_2_0</Name>
+      <Project>{F831A2EE-C35E-42C1-AE7F-E69B52816EB8}</Project>
+      <Name>System.IdentityModel-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.IdentityModel.Selectors\System.IdentityModel.Selectors-net_2_0.csproj">
-      <Project>{5A185DDB-82E9-4241-8216-82988647755A}</Project>
-      <Name>System.IdentityModel.Selectors\System.IdentityModel.Selectors-net_2_0</Name>
+      <Project>{E863F019-7FC5-411F-ABA8-1257CE0EC017}</Project>
+      <Name>System.IdentityModel.Selectors-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Transactions\System.Transactions-net_2_0.csproj">
-      <Project>{DD1B3195-5FEA-46A2-99B5-9839CA60485C}</Project>
-      <Name>System.Transactions\System.Transactions-net_2_0</Name>
+      <Project>{2DFCF717-DC1B-4B33-9449-F692C5B2AD6F}</Project>
+      <Name>System.Transactions-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Messaging\System.Messaging-net_2_0.csproj">
-      <Project>{858BC3D5-8B2D-4B24-8BD9-BDC36A1DAFE4}</Project>
-      <Name>System.Messaging\System.Messaging-net_2_0</Name>
+      <Project>{8C8E0CD5-E756-4AA7-A153-BC4D4039F7A9}</Project>
+      <Name>System.Messaging-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_2_0-2.csproj">
-      <Project>{4F179720-1E19-46E8-A55E-010C20701EFF}</Project>
-      <Name>System.Web\System.Web-net_2_0-2</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\System.Web.Services\System.Web.Services-net_2_0.csproj">
-      <Project>{71444193-6B64-4C1B-A87D-580CCB548952}</Project>
-      <Name>System.Web.Services\System.Web.Services-net_2_0</Name>
+      <Project>{DC010714-E620-4B37-A7A0-B7D9818CBC11}</Project>
+      <Name>System.Web.Services-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Security\Mono.Security-net_2_0.csproj">
-      <Project>{6785B2B5-3B06-48F3-9E6C-99B23B9AAC4F}</Project>
-      <Name>Mono.Security\Mono.Security-net_2_0</Name>
+      <Project>{0992B8B3-5118-4BBF-A889-206AEED2E441}</Project>
+      <Name>Mono.Security-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

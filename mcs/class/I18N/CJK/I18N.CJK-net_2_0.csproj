@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4E0A4799-A3C5-4E57-8713-FDD18BC6A51F}</ProjectGuid>
+    <ProjectGuid>{464A9208-99AD-46C7-BF4B-58EF27E52FB0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\I18N.CJK-net_2_0</OutputPath>
@@ -75,12 +75,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\I18N\Common\I18N-net_2_0.csproj">
-      <Project>{B4A11584-7362-47A0-9E27-0E4DE9539D77}</Project>
-      <Name>Common\I18N-net_2_0</Name>
+      <Project>{D86EB3CD-4021-4248-8E8B-5FB0030A0A81}</Project>
+      <Name>I18N-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C4790F29-45CF-4D74-85FC-95F9F35D6B8E}</ProjectGuid>
+    <ProjectGuid>{835E7EAB-D5A6-4625-ACF8-CE47286CF916}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.ServiceModel.Discovery-net_4_0</OutputPath>
@@ -45,11 +45,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Assembly\AssemblyInfo.cs" />
-    <Compile Include="System.ServiceModel.Channels\DiscoveryChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Channels\RequestChannelBase.cs" />
-    <Compile Include="System.ServiceModel.Discovery.Configuration\AnnouncementChannelEndpointElementCollection.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\AnnouncementEndpointCollectionElement.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\AnnouncementEndpointElement.cs" />
+    <Compile Include="System.ServiceModel.Discovery.Configuration\AnnouncementChannelEndpointElementCollection.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\ContractTypeNameElement.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\ContractTypeNameElementCollection.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\DiscoveryClientElement.cs" />
@@ -69,9 +67,9 @@
     <Compile Include="System.ServiceModel.Discovery.Configuration\UdpDiscoveryEndpointCollectionElement.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\UdpDiscoveryEndpointElement.cs" />
     <Compile Include="System.ServiceModel.Discovery.Configuration\UdpTransportSettingsElement.cs" />
+    <Compile Include="System.ServiceModel.Discovery.Udp\UdpDuplexChannel.cs" />
     <Compile Include="System.ServiceModel.Discovery.Udp\UdpChannelFactory.cs" />
     <Compile Include="System.ServiceModel.Discovery.Udp\UdpChannelListener.cs" />
-    <Compile Include="System.ServiceModel.Discovery.Udp\UdpDuplexChannel.cs" />
     <Compile Include="System.ServiceModel.Discovery.Udp\UdpTransportBindingElement.cs" />
     <Compile Include="System.ServiceModel.Discovery.Version11\AnnouncementClient11.cs" />
     <Compile Include="System.ServiceModel.Discovery.Version11\DiscoveryMessageSequence11.cs" />
@@ -110,13 +108,13 @@
     <Compile Include="System.ServiceModel.Discovery\AnnouncementEndpoint.cs" />
     <Compile Include="System.ServiceModel.Discovery\AnnouncementEventArgs.cs" />
     <Compile Include="System.ServiceModel.Discovery\AnnouncementService.cs" />
-    <Compile Include="System.ServiceModel.Discovery\DiscoveryChannelDispatcher.cs" />
-    <Compile Include="System.ServiceModel.Discovery\DiscoveryChannelFactory.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryClient.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryClientBindingElement.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryEndpoint.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryEndpointProvider.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryEndpointPublisherBehavior.cs" />
+    <Compile Include="System.ServiceModel.Discovery\DiscoveryChannelDispatcher.cs" />
+    <Compile Include="System.ServiceModel.Discovery\DiscoveryChannelFactory.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryMessageSequence.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryMessageSequenceGenerator.cs" />
     <Compile Include="System.ServiceModel.Discovery\DiscoveryOperationContextExtension.cs" />
@@ -141,7 +139,9 @@
     <Compile Include="System.ServiceModel.Discovery\ServiceDiscoveryMode.cs" />
     <Compile Include="System.ServiceModel.Discovery\UdpAnnouncementEndpoint.cs" />
     <Compile Include="System.ServiceModel.Discovery\UdpDiscoveryEndpoint.cs" />
-    <Compile Include="System.ServiceModel.Discovery\UdpTransportSettings.cs" />  </ItemGroup>
+    <Compile Include="System.ServiceModel.Discovery\UdpTransportSettings.cs" />
+    <Compile Include="System.ServiceModel.Channels\DiscoveryChannelBase.cs" />
+    <Compile Include="System.ServiceModel.Channels\RequestChannelBase.cs" />  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -159,36 +159,36 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_0.csproj">
-      <Project>{4F614C6C-A83E-4C3C-859B-0548391F519E}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_0</Name>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_4_0.csproj">
-      <Project>{3353D8EA-FB17-4A46-B7B6-82D55B12BD5D}</Project>
-      <Name>System.ServiceModel\System.ServiceModel-net_4_0</Name>
+    <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_2_0.csproj">
+      <Project>{07DAB1EF-2FED-45A6-8627-12B94642C0DA}</Project>
+      <Name>System.ServiceModel-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq-net_4_0.csproj">
-      <Project>{1BD010C0-0588-4ACB-A9E7-483D138D29E9}</Project>
-      <Name>System.Xml.Linq\System.Xml.Linq-net_4_0</Name>
+      <Project>{74E0E0EB-375A-4ADF-8440-93DAF6333EEE}</Project>
+      <Name>System.Xml.Linq-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_0.csproj">
-      <Project>{CA49630B-FD24-411F-9651-B15CA72CE5B8}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_0</Name>
+      <Project>{939C5C8D-56F1-4AA8-9C44-F59431077782}</Project>
+      <Name>System.Configuration-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

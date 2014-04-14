@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{524097C2-FED2-464A-878B-4A782E51093F}</ProjectGuid>
+    <ProjectGuid>{56FACDB6-6966-4A19-A7CE-E6AE94A3C9B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Json.Microsoft-net_4_0</OutputPath>
@@ -56,9 +56,9 @@
     <Compile Include="System.Json\JsonPrimitive.cs" />
     <Compile Include="System.Json\JsonType.cs" />
     <Compile Include="System.Json\JsonValue.cs" />
+    <Compile Include="System.Json\JsonValueDynamicMetaObject.cs" />
     <Compile Include="System.Json\JsonValueChange.cs" />
     <Compile Include="System.Json\JsonValueChangeEventArgs.cs" />
-    <Compile Include="System.Json\JsonValueDynamicMetaObject.cs" />
     <Compile Include="System.Json\JsonValueLinqExtensions.cs" />
     <Compile Include="System.Json\JXmlToJsonValueConverter.cs" />
     <Compile Include="System.Json\NGenWrapper.cs" />
@@ -81,28 +81,28 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_0-1.csproj">
-      <Project>{51720A26-B4D9-4B84-8CB5-9CBA57477FBB}</Project>
-      <Name>System.XML\System.Xml-net_4_0-1</Name>
+      <Project>{B841C000-8547-4D3B-8138-3498CC89A670}</Project>
+      <Name>System.Xml-net_4_0-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_0.csproj">
-      <Project>{D121EB80-19C6-4313-9BBE-6F66556CE8B7}</Project>
-      <Name>System.Core\System.Core-net_4_0</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_0.csproj">
-      <Project>{4F614C6C-A83E-4C3C-859B-0548391F519E}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_0</Name>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.CSharp\Microsoft.CSharp-net_4_0.csproj">
-      <Project>{342E1BD0-A935-4D49-B71E-ECDF0B42F90F}</Project>
-      <Name>Microsoft.CSharp\Microsoft.CSharp-net_4_0</Name>
+      <Project>{6859DD71-6AB5-48C2-BBD2-7AAFFA18AEEF}</Project>
+      <Name>Microsoft.CSharp-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

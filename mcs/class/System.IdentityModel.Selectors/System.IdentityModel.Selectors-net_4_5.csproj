@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5889C0B9-25DF-4405-A240-AC0615F4B3EB}</ProjectGuid>
+    <ProjectGuid>{EF93998C-9F35-4491-8CFD-2307223D2A19}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.IdentityModel.Selectors-net_4_5</OutputPath>
@@ -76,28 +76,28 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Security\System.Security-net_4_5.csproj">
-      <Project>{C7510E1F-66A4-4076-B87B-889E219AAB3F}</Project>
-      <Name>System.Security\System.Security-net_4_5</Name>
+      <Project>{A47E1162-26DA-4934-8C57-92F9DDDF0B5B}</Project>
+      <Name>System.Security-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_5.csproj">
-      <Project>{E90544E8-C031-49EE-BB6F-8688382E8618}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_5</Name>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.IdentityModel\System.IdentityModel-net_4_5.csproj">
-      <Project>{1B8CCB0F-D7EC-421E-B5E3-9F107139FE7E}</Project>
-      <Name>System.IdentityModel\System.IdentityModel-net_4_5</Name>
+      <Project>{4DAAC302-DFEB-49DA-86EC-648F030D1B4C}</Project>
+      <Name>System.IdentityModel-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

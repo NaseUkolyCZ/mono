@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9BDDA23D-1ABF-477A-AAA6-CD489033208E}</ProjectGuid>
+    <ProjectGuid>{9A6C5328-6E1F-461A-8DE9-E314C90D9D0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\System.Net.Http.Formatting-net_4_5</OutputPath>
@@ -200,22 +200,6 @@
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\PreserveReferencesHandling.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\ReferenceLoopHandling.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Required.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\Extensions.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchema.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaBuilder.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaConstants.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaException.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaGenerator.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaModel.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaModelBuilder.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaNode.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaNodeCollection.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaResolver.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaType.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaWriter.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\UndefinedSchemaIdHandling.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\ValidationEventArgs.cs" />
-    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\ValidationEventHandler.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\CachedAttributeGetter.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\DefaultContractResolver.cs" />
@@ -248,6 +232,22 @@
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\ObjectConstructor.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\OnErrorAttribute.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\Extensions.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchema.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaException.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaModel.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaNode.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaType.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\ValidationEventArgs.cs" />
+    <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Schema\ValidationEventHandler.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\TypeNameHandling.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\Base64Encoder.cs" />
     <Compile Include="..\..\..\external\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\BidirectionalDictionary.cs" />
@@ -297,40 +297,40 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Core\System.Core-net_4_5.csproj">
-      <Project>{D8260595-C32F-4AC3-9C01-2CD2528CFA1D}</Project>
-      <Name>System.Core\System.Core-net_4_5</Name>
+    <ProjectReference Include="..\System.Core\System.Core-net_2_0.csproj">
+      <Project>{60564C7A-73C6-4571-B85F-A90F1A11BFB8}</Project>
+      <Name>System.Core-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Net.Http\System.Net.Http-net_4_5.csproj">
-      <Project>{BE71D058-35CB-4623-AA66-631C7EB5F139}</Project>
-      <Name>System.Net.Http\System.Net.Http-net_4_5</Name>
+      <Project>{0AB26B4C-C081-4CC7-98D9-1C4A07559720}</Project>
+      <Name>System.Net.Http-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_4_5.csproj">
-      <Project>{E90544E8-C031-49EE-BB6F-8688382E8618}</Project>
-      <Name>System.Runtime.Serialization\System.Runtime.Serialization-net_4_5</Name>
+    <ProjectReference Include="..\System.Runtime.Serialization\System.Runtime.Serialization-net_2_0.csproj">
+      <Project>{ADB1DE49-F578-4216-A5C3-F60741A9B843}</Project>
+      <Name>System.Runtime.Serialization-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq-net_4_5.csproj">
-      <Project>{A581C8A4-F031-43BA-A744-042ECD6EA6FE}</Project>
-      <Name>System.Xml.Linq\System.Xml.Linq-net_4_5</Name>
+      <Project>{BA4BAEBF-4706-48AE-9B07-221BA34B61D1}</Project>
+      <Name>System.Xml.Linq-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Data\System.Data-net_4_5.csproj">
-      <Project>{663D8C81-B74E-4D44-8C59-2264C6942B30}</Project>
-      <Name>System.Data\System.Data-net_4_5</Name>
+      <Project>{4BC86D63-E324-4EED-933D-25D6B23CD7FF}</Project>
+      <Name>System.Data-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
-      <Project>{CA2CD67B-1308-460D-BDBA-498F63DEAA31}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_5</Name>
+      <Project>{80C88BDD-6B93-4D91-9CD6-A9F62785E3E0}</Project>
+      <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

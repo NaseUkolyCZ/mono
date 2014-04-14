@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1CD96FCF-0288-4FA4-9451-47B0C2206186}</ProjectGuid>
+    <ProjectGuid>{9D35E008-B83D-4FCE-924A-1CFE174DAC90}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699,649,169</NoWarn>
     <OutputPath>bin\Debug\System.Web.Services-net_4_5</OutputPath>
@@ -284,28 +284,29 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_5.csproj">
-      <Project>{07C1F58B-9E99-47F8-A847-79EDA5157DA8}</Project>
-      <Name>corlib\corlib-net_4_5</Name>
+      <Project>{6D53B1FE-249F-4583-84C4-9EDDFBE34710}</Project>
+      <Name>corlib-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_5-2.csproj">
-      <Project>{38FCD731-0E11-46F7-A31B-DCBE853AD8D7}</Project>
-      <Name>System\System-net_4_5-2</Name>
+      <Project>{9D621B9D-89D9-4953-B386-3A3103A7431A}</Project>
+      <Name>System-net_4_5-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.EnterpriseServices\System.EnterpriseServices-net_4_5.csproj">
-      <Project>{20B32D23-8DD0-4291-A98F-C52A3E99DFE8}</Project>
-      <Name>System.EnterpriseServices\System.EnterpriseServices-net_4_5</Name>
+      <Project>{117ACB4F-82D9-418F-9D49-733A16A52C99}</Project>
+      <Name>System.EnterpriseServices-net_4_5</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.XML\System.Xml-net_4_5-1.csproj">
-      <Project>{4ED6CCE8-8E8A-4D82-8BCA-3EA4D4203AA4}</Project>
-      <Name>System.XML\System.Xml-net_4_5-1</Name>
+      <Project>{B46938B9-0681-4BFB-8CBA-B2D7AB84954C}</Project>
+      <Name>System.Xml-net_4_5-1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Web\System.Web-net_4_5.csproj">
-      <Project>{0B03F192-EC11-49E5-A7F6-E97C0D559E51}</Project>
-      <Name>System.Web\System.Web-net_4_5</Name>
-    </ProjectReference>
+    <Reference Include="System.Web.dll">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\System.Configuration\System.Configuration-net_4_5.csproj">
-      <Project>{CA2CD67B-1308-460D-BDBA-498F63DEAA31}</Project>
-      <Name>System.Configuration\System.Configuration-net_4_5</Name>
+      <Project>{80C88BDD-6B93-4D91-9CD6-A9F62785E3E0}</Project>
+      <Name>System.Configuration-net_4_5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

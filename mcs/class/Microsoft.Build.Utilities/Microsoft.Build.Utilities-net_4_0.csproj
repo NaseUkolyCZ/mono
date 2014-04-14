@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A20F004B-16AC-44DE-A14E-2C2B5E9F72BE}</ProjectGuid>
+    <ProjectGuid>{55623B76-5E3D-4635-8B24-133AAE5498B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Microsoft.Build.Utilities-net_4_0</OutputPath>
@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="..\..\build\common\MonoTODOAttribute.cs" />
+    <Compile Include="..\..\tools\xbuild\XBuildConsts.cs" />
     <Compile Include="..\System\System.Collections.Specialized\ProcessStringDictionary.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
     <Compile Include="Microsoft.Build.Utilities\AppDomainIsolatedTask.cs" />
@@ -82,16 +83,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_4_0.csproj">
-      <Project>{3874F10B-9AE4-4A7E-873B-42FFDCE80CB7}</Project>
-      <Name>corlib\corlib-net_4_0</Name>
+      <Project>{CDD5D38B-0837-4864-AC14-B7F92A5A985B}</Project>
+      <Name>corlib-net_4_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_4_0-2.csproj">
-      <Project>{8260E24F-1471-4320-AB5B-7CC7B68521E3}</Project>
-      <Name>System\System-net_4_0-2</Name>
+      <Project>{EDA3CCC2-A837-482F-AB1E-2DB0886975E2}</Project>
+      <Name>System-net_4_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Build.Framework\Microsoft.Build.Framework-net_4_0.csproj">
-      <Project>{1D4BCF4D-31D1-4F92-A2B2-D9E41A640649}</Project>
-      <Name>Microsoft.Build.Framework\Microsoft.Build.Framework-net_4_0</Name>
+      <Project>{554A81EB-9095-4F7A-B8E2-F748741A3C75}</Project>
+      <Name>Microsoft.Build.Framework-net_4_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7230E9AE-C6D4-402A-91CF-C164148CDD21}</ProjectGuid>
+    <ProjectGuid>{F27532D3-4EAA-4A4F-833A-8548DC3A4803}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoWarn>1699</NoWarn>
     <OutputPath>bin\Debug\Mono.Cecil.Mdb-net_2_0</OutputPath>
@@ -68,16 +68,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\corlib\corlib-net_2_0.csproj">
-      <Project>{EB7444A6-C3E6-4224-BDB0-63CA3B4F2B87}</Project>
-      <Name>corlib\corlib-net_2_0</Name>
+      <Project>{6BC2E187-8D07-4CC9-82CC-B14689AFC4C8}</Project>
+      <Name>corlib-net_2_0</Name>
     </ProjectReference>
     <ProjectReference Include="..\System\System-net_2_0-2.csproj">
-      <Project>{79F25FD7-0D76-4526-AF39-1A648649A827}</Project>
-      <Name>System\System-net_2_0-2</Name>
+      <Project>{4F42973D-24D1-46C2-84F9-C2327C8CBB3C}</Project>
+      <Name>System-net_2_0-2</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Cecil\Mono.Cecil-net_2_0.csproj">
-      <Project>{2F1D61B7-0586-4587-8ECE-926A065F6276}</Project>
-      <Name>Mono.Cecil\Mono.Cecil-net_2_0</Name>
+      <Project>{673FB60D-F6BD-49F4-8963-ABDE74B7145A}</Project>
+      <Name>Mono.Cecil-net_2_0</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
