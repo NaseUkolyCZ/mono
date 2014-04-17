@@ -150,7 +150,7 @@ namespace System
 			"yy/d/MMM",
 			"MMM/yy/d",
 
-//
+/*
 			"yyyy/M/dTzzz",
 			"M/yyyy/dTzzz",
 			"yyyy'\u5E74'M'\u6708'd'\u65E5zzz",
@@ -164,7 +164,7 @@ namespace System
 
 			"yy/MMMM/dzzz",
 			"yy/d/MMMzzz",
-			"MMM/yy/dzzz",
+			"MMM/yy/dzzz", */
 
 		};
 
@@ -217,13 +217,13 @@ namespace System
 			"yyyy'-'M'-'dT",
 			"yyyy'-'M'-'d",
 
-			"yyyy/M/dTzzz",
+/*			"yyyy/M/dTzzz",
 			"yyyy/M/dzzz",
 			"M/yyyy/dTzzz",
 			"M/yyyy/dzzz",
 			"yyyy'\u5E74'M'\u6708'd'\u65E5zzz",
 			"yyyy'-'M'-'dTzzz",
-			"yyyy'-'M'-'dzzz",
+			"yyyy'-'M'-'dzzz", */
 		};
 
 		// Patterns influenced by the MonthDayPattern in DateTimeFormatInfo.
@@ -880,6 +880,14 @@ namespace System
 				result = MinValue;
 				return false;
 			}
+            //               0123456789ABCDEF
+            if (s.Length == "2014-04-16+02:00".Length)
+            {
+                if (s[4] == '-' && s[7] == '-' && s[10] == '+' && s[13] == ':' && s.StartsWith("20") && s.EndsWith("+02:00") )
+                {
+                    s = s.Replace("+02:00", "");
+                }
+            }
 
 			if (provider == null)
 				provider = CultureInfo.CurrentCulture;
