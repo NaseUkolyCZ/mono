@@ -888,8 +888,12 @@ namespace System
                     s = s.Replace("+02:00", "");
 
                     string[] parts = s.Split('-');
-                    DateTime result = new DateTime(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]));
-                    s = result.ToString();
+                    DateTime result2 = new DateTime(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]));
+                    s = result2.ToString();
+
+                    /* UNCOMMENTED TO RETURN IMMEDIATELLY */
+                    result = result2;
+                    return true;
                 }
             }
 
