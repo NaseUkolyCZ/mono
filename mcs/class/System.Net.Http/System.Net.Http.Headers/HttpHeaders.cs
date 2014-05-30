@@ -175,6 +175,32 @@ namespace System.Net.Http.Headers
 			return AddInternal (headerInfo.Name, new [] { value }, headerInfo, ignoreInvalid);
 		}
 
+
+
+
+		private void ShowParameters(string name, IEnumerable<string> values, HeaderInfo headerInfo, bool ignoreInvalid)
+		{
+			Console.WriteLine(string.Format("Name='{0}'", name));
+			if(values != null)
+			{
+				foreach(var item in values)
+				{
+					Console.WriteLine(string.Format("Values='{0}'", item));
+				}
+			}
+			if(headerInfo != null)
+			{
+				 Console.WriteLine(string.Format("headerInfo.AllowsMany='{0}'", headerInfo.AllowsMany));
+			}
+			Console.WriteLine("ignoreInvalid=" + ignoreInvalid.ToString());	
+		}
+
+		private void ShowWhatsWrong(int num, string val)
+		{
+			Console.WriteLine("num=" + num);
+			Console.WriteLine("val=" + val);
+		}
+
 		bool AddInternal (string name, IEnumerable<string> values, HeaderInfo headerInfo, bool ignoreInvalid)
 		{
 			HeaderBucket bucket;
@@ -202,7 +228,9 @@ namespace System.Net.Http.Headers
 						headerInfo.AddToCollection (bucket.Parsed, parsed_value);
 					} else {
 						if (bucket != null)
+						{
 							throw new FormatException ();
+						}
 
 						bucket = new HeaderBucket (parsed_value);
 					}
